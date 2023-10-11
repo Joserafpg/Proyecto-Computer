@@ -468,7 +468,7 @@
             this.bunifuButton22.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.bunifuButton22.onHoverState.BorderThickness = 1;
             this.bunifuButton22.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
-            this.bunifuButton22.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.bunifuButton22.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(45)))), ((int)(((byte)(224)))));
             this.bunifuButton22.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage6")));
             this.bunifuButton22.onHoverState.IconRightImage = null;
             this.bunifuButton22.OnIdleState.BorderColor = System.Drawing.Color.White;
@@ -484,7 +484,7 @@
             this.bunifuButton22.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.bunifuButton22.OnPressedState.BorderThickness = 1;
             this.bunifuButton22.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
-            this.bunifuButton22.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.bunifuButton22.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(45)))), ((int)(((byte)(224)))));
             this.bunifuButton22.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage7")));
             this.bunifuButton22.OnPressedState.IconRightImage = null;
             this.bunifuButton22.Size = new System.Drawing.Size(176, 40);
@@ -557,7 +557,7 @@
             this.bunifuButton23.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.bunifuButton23.onHoverState.BorderThickness = 1;
             this.bunifuButton23.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
-            this.bunifuButton23.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.bunifuButton23.onHoverState.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.bunifuButton23.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage4")));
             this.bunifuButton23.onHoverState.IconRightImage = null;
             this.bunifuButton23.OnIdleState.BorderColor = System.Drawing.Color.White;
@@ -573,7 +573,7 @@
             this.bunifuButton23.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.bunifuButton23.OnPressedState.BorderThickness = 1;
             this.bunifuButton23.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
-            this.bunifuButton23.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.bunifuButton23.OnPressedState.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.bunifuButton23.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage5")));
             this.bunifuButton23.OnPressedState.IconRightImage = null;
             this.bunifuButton23.Size = new System.Drawing.Size(176, 40);
@@ -646,7 +646,7 @@
             this.bunifuButton24.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.bunifuButton24.onHoverState.BorderThickness = 1;
             this.bunifuButton24.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
-            this.bunifuButton24.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.bunifuButton24.onHoverState.ForeColor = System.Drawing.Color.Orange;
             this.bunifuButton24.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage2")));
             this.bunifuButton24.onHoverState.IconRightImage = null;
             this.bunifuButton24.OnIdleState.BorderColor = System.Drawing.Color.White;
@@ -662,7 +662,7 @@
             this.bunifuButton24.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.bunifuButton24.OnPressedState.BorderThickness = 1;
             this.bunifuButton24.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
-            this.bunifuButton24.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.bunifuButton24.OnPressedState.ForeColor = System.Drawing.Color.Orange;
             this.bunifuButton24.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage3")));
             this.bunifuButton24.OnPressedState.IconRightImage = null;
             this.bunifuButton24.Size = new System.Drawing.Size(176, 40);
@@ -687,7 +687,7 @@
             this.bunifuButton26.BackColor1 = System.Drawing.Color.White;
             this.bunifuButton26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton26.BackgroundImage")));
             this.bunifuButton26.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton26.ButtonText = "Sign off";
+            this.bunifuButton26.ButtonText = "Salir";
             this.bunifuButton26.ButtonTextMarginLeft = 0;
             this.bunifuButton26.ColorContrastOnClick = 45;
             this.bunifuButton26.ColorContrastOnHover = 45;
