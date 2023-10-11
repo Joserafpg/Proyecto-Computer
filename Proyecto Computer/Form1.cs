@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Runtime.InteropServices;
 
 namespace Proyecto_Computer
 {
@@ -98,6 +99,49 @@ namespace Proyecto_Computer
             l.run();
 
             dezplazaradentro();
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void label1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        public void text(string tittle, string description)
+        {
+            tittlepage.Text = tittle;
+            descriptiontext.Text = description;
+        }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            text("Inicio", "???.");
+        }
+
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            text("Inventario", "???.");
+        }
+
+        private void btnclientes_Click(object sender, EventArgs e)
+        {
+            text("Clientes", "???.");
+        }
+
+        private void btnventas_Click(object sender, EventArgs e)
+        {
+            text("Ventas", "???.");
         }
     }
 }
