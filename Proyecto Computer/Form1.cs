@@ -12,12 +12,15 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Runtime.InteropServices;
+using BunifuAnimatorNS;
+using Bunifu.UI.WinForms;
 
 namespace Proyecto_Computer
 {
     public partial class Form1 : Form
     {
         const int time = 300;
+
         public Form1()
         {
             InitializeComponent();
@@ -77,6 +80,12 @@ namespace Proyecto_Computer
             fh.Show();
         }
 
+        private async void EjecutarConRetraso()
+        {
+            await Task.Delay(TimeSpan.FromSeconds(0.08)); 
+            panel3.Width = 115;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             bordesradius();
@@ -99,8 +108,8 @@ namespace Proyecto_Computer
             btnmenud.Visible = true;
             
             closemenu.Visible = false;
-            panel3.Width = 130;
             dezplazaraafuera();
+            EjecutarConRetraso();
         }
 
         private void btnmenud_Click(object sender, EventArgs e)
@@ -158,6 +167,11 @@ namespace Proyecto_Computer
         private void btnventas_Click(object sender, EventArgs e)
         {
             text("Ventas", "???.");
+        }
+
+        private void panelDesktop_SizeChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
