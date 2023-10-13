@@ -56,6 +56,7 @@
             this.pmenud = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnmenud = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
@@ -758,22 +759,33 @@
             this.panelDesktop.AutoSize = true;
             this.panelDesktop.BackColor = System.Drawing.Color.Transparent;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 0);
+            this.panelDesktop.Location = new System.Drawing.Point(225, 104);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1200, 554);
+            this.panelDesktop.Size = new System.Drawing.Size(975, 450);
             this.panelDesktop.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 104);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(225, 450);
+            this.panel3.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 554);
-            this.Controls.Add(this.pmenud);
+            this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.menu);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pmenud);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelDesktop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
@@ -814,6 +826,7 @@
         private Bunifu.UI.WinForms.BunifuPanel pmenud;
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnmenud;
         private System.Windows.Forms.Panel panelDesktop;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

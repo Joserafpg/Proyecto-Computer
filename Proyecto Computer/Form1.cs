@@ -99,6 +99,7 @@ namespace Proyecto_Computer
             btnmenud.Visible = true;
             
             closemenu.Visible = false;
+            panel3.Width = 130;
             dezplazaraafuera();
         }
 
@@ -109,6 +110,7 @@ namespace Proyecto_Computer
             l.add(tittlepage, "Left", 250);
             l.add(descriptiontext, "Left", 255);
             closemenu.Visible = true;
+            panel3.Width = 225;
             l.run();
 
             dezplazaradentro();
