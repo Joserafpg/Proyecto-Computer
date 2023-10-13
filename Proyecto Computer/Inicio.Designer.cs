@@ -45,7 +45,7 @@
             this.bunifuPanel1.Location = new System.Drawing.Point(23, 12);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(939, 100);
+            this.bunifuPanel1.Size = new System.Drawing.Size(900, 100);
             this.bunifuPanel1.TabIndex = 0;
             // 
             // bunifuPanel2
@@ -60,7 +60,7 @@
             this.bunifuPanel2.Location = new System.Drawing.Point(23, 118);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(247, 420);
+            this.bunifuPanel2.Size = new System.Drawing.Size(247, 320);
             this.bunifuPanel2.TabIndex = 1;
             // 
             // Inicio
@@ -68,7 +68,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1100, 550);
+            this.ClientSize = new System.Drawing.Size(1100, 450);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
