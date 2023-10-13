@@ -65,9 +65,22 @@ namespace Proyecto_Computer
             this.Region = new Region(objDraw);
         }
 
+        public void AbrirFormEnPanel(object Formhijo)
+        {
+            if (this.panelDesktop.Controls.Count > 0)
+                this.panelDesktop.Controls.RemoveAt(0);
+            Form fh = Formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelDesktop.Controls.Add(fh);
+            this.panelDesktop.Tag = fh;
+            fh.Show();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             bordesradius();
+            btninicio.PerformClick();
         }
 
         private void bunifuIconButton1_Click(object sender, EventArgs e)
@@ -127,6 +140,7 @@ namespace Proyecto_Computer
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
             text("Inicio", "???.");
+            AbrirFormEnPanel(new Inicio());
         }
 
         private void bunifuButton22_Click(object sender, EventArgs e)
