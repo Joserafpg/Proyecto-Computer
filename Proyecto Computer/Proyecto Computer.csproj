@@ -223,6 +223,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
