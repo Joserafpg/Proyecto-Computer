@@ -49,6 +49,15 @@ namespace Proyecto_Computer
             string inputText = txtpass.Text;
 
             bool containsLetterOrDigit = false;
+            txtuser.BorderColorDisabled = Color.FromArgb(204, 204, 204);
+            txtuser.BorderColorActive = Color.DodgerBlue;
+            txtuser.BorderColorHover = Color.FromArgb(105, 181, 255);
+            txtuser.BorderColorIdle = Color.Silver;
+            
+            txtpass.BorderColorDisabled = Color.FromArgb(204, 204, 204);
+            txtpass.BorderColorActive = Color.DodgerBlue;
+            txtpass.BorderColorHover = Color.FromArgb(105, 181, 255);
+            txtpass.BorderColorIdle = Color.Silver;
 
             foreach (char c in inputText)
             {
@@ -138,9 +147,31 @@ namespace Proyecto_Computer
             {
                 MessageBox.Show(" Usuario o contraseña Incorrecto");
                 txtpass.Focus();
+                txtuser.BorderColorActive = Color.Red;
+                txtuser.BorderColorDisabled = Color.Red;
+                txtuser.BorderColorHover = Color.Red;
+                txtuser.BorderColorIdle = Color.Red;
+                
+                txtpass.BorderColorActive = Color.Red;
+                txtpass.BorderColorDisabled = Color.Red;
+                txtpass.BorderColorHover = Color.Red;
+                txtpass.BorderColorIdle = Color.Red;
             }
 
             Conexion.cerrarcon();
+        }
+
+        private void txtuser_TextChanged(object sender, EventArgs e)
+        {
+            txtuser.BorderColorDisabled = Color.FromArgb(204, 204, 204);
+            txtuser.BorderColorActive = Color.DodgerBlue;
+            txtuser.BorderColorHover = Color.FromArgb(105, 181, 255);
+            txtuser.BorderColorIdle = Color.Silver;
+
+            txtpass.BorderColorDisabled = Color.FromArgb(204, 204, 204);
+            txtpass.BorderColorActive = Color.DodgerBlue;
+            txtpass.BorderColorHover = Color.FromArgb(105, 181, 255);
+            txtpass.BorderColorIdle = Color.Silver;
         }
     }
 }

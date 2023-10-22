@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -39,8 +40,8 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.btnpassview = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.bunifuIconButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtpass = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -49,7 +50,6 @@
             this.signin = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnpassview = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +73,41 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(472, 365);
             this.bunifuPanel1.TabIndex = 0;
+            // 
+            // btnpassview
+            // 
+            this.btnpassview.AllowAnimations = true;
+            this.btnpassview.AllowBorderColorChanges = true;
+            this.btnpassview.AllowMouseEffects = true;
+            this.btnpassview.AnimationSpeed = 200;
+            this.btnpassview.BackColor = System.Drawing.Color.Transparent;
+            this.btnpassview.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnpassview.BorderColor = System.Drawing.Color.Transparent;
+            this.btnpassview.BorderRadius = 1;
+            this.btnpassview.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.btnpassview.BorderThickness = 1;
+            this.btnpassview.ColorContrastOnClick = 30;
+            this.btnpassview.ColorContrastOnHover = 30;
+            this.btnpassview.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnpassview.CustomizableEdges = borderEdges1;
+            this.btnpassview.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnpassview.Image = ((System.Drawing.Image)(resources.GetObject("btnpassview.Image")));
+            this.btnpassview.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.btnpassview.Location = new System.Drawing.Point(341, 202);
+            this.btnpassview.Name = "btnpassview";
+            this.btnpassview.RoundBorders = true;
+            this.btnpassview.ShowBorders = true;
+            this.btnpassview.Size = new System.Drawing.Size(28, 28);
+            this.btnpassview.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.btnpassview.TabIndex = 15;
+            this.btnpassview.Visible = false;
+            this.btnpassview.Click += new System.EventHandler(this.bunifuIconButton2_Click);
+            this.btnpassview.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuIconButton2_MouseDown);
+            this.btnpassview.MouseUp += new System.Windows.Forms.MouseEventHandler(this.bunifuIconButton2_MouseUp);
             // 
             // bunifuIconButton1
             // 
@@ -202,7 +237,7 @@
             // 
             this.txtpass.AcceptsReturn = false;
             this.txtpass.AcceptsTab = false;
-            this.txtpass.AnimationSpeed = 200;
+            this.txtpass.AnimationSpeed = 100;
             this.txtpass.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtpass.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtpass.AutoSizeHeight = true;
@@ -279,7 +314,7 @@
             // 
             this.txtuser.AcceptsReturn = false;
             this.txtuser.AcceptsTab = false;
-            this.txtuser.AnimationSpeed = 200;
+            this.txtuser.AnimationSpeed = 100;
             this.txtuser.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtuser.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtuser.AutoSizeHeight = true;
@@ -350,6 +385,7 @@
             this.txtuser.TextPlaceholder = "Enter User";
             this.txtuser.UseSystemPasswordChar = false;
             this.txtuser.WordWrap = true;
+            this.txtuser.TextChanged += new System.EventHandler(this.txtuser_TextChanged);
             // 
             // panelb
             // 
@@ -391,41 +427,6 @@
             this.label2.Size = new System.Drawing.Size(280, 22);
             this.label2.TabIndex = 8;
             this.label2.Text = "Bienvenidos a BlindComputer";
-            // 
-            // btnpassview
-            // 
-            this.btnpassview.AllowAnimations = true;
-            this.btnpassview.AllowBorderColorChanges = true;
-            this.btnpassview.AllowMouseEffects = true;
-            this.btnpassview.AnimationSpeed = 200;
-            this.btnpassview.BackColor = System.Drawing.Color.Transparent;
-            this.btnpassview.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnpassview.BorderColor = System.Drawing.Color.Transparent;
-            this.btnpassview.BorderRadius = 1;
-            this.btnpassview.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
-            this.btnpassview.BorderThickness = 1;
-            this.btnpassview.ColorContrastOnClick = 30;
-            this.btnpassview.ColorContrastOnHover = 30;
-            this.btnpassview.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnpassview.CustomizableEdges = borderEdges1;
-            this.btnpassview.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnpassview.Image = ((System.Drawing.Image)(resources.GetObject("btnpassview.Image")));
-            this.btnpassview.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.btnpassview.Location = new System.Drawing.Point(341, 202);
-            this.btnpassview.Name = "btnpassview";
-            this.btnpassview.RoundBorders = true;
-            this.btnpassview.ShowBorders = true;
-            this.btnpassview.Size = new System.Drawing.Size(28, 28);
-            this.btnpassview.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
-            this.btnpassview.TabIndex = 15;
-            this.btnpassview.Visible = false;
-            this.btnpassview.Click += new System.EventHandler(this.bunifuIconButton2_Click);
-            this.btnpassview.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuIconButton2_MouseDown);
-            this.btnpassview.MouseUp += new System.Windows.Forms.MouseEventHandler(this.bunifuIconButton2_MouseUp);
             // 
             // Login
             // 

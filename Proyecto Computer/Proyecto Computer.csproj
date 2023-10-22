@@ -224,6 +224,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\DatosgetRegistro.cs" />
     <Compile Include="Clases\Permisos.cs" />
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
