@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Proyecto_Computer.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -87,7 +89,58 @@ namespace Proyecto_Computer
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
+            if (txtuser.Text.Equals(""))
+            {
+                MessageBox.Show("El usuario no debe estar en blanco!...");
+                txtuser.Focus();
+                return;
+            }
 
+            if (txtpass.Text.Equals(""))
+            {
+                MessageBox.Show("La contraseña no debe estar en blanco!...");
+                txtpass.Focus();
+                return;
+            }
+
+            DataTable dt = new DataTable();
+            string consulta;
+            consulta = " select * from Usuarios where Usuario=@usuario AND Contraseña =@contrasena";
+            Conexion.opencon();
+            SqlDataAdapter da = new SqlDataAdapter(consulta, Conexion.ObtenerConexion());
+            Conexion.cerrarcon();
+
+            da.SelectCommand.CommandType = CommandType.Text;
+            da.SelectCommand.Parameters.Add("@usuario", SqlDbType.VarChar, 10).Value = txtuser.Text;
+            da.SelectCommand.Parameters.Add("@contrasena", SqlDbType.VarChar, 10).Value = txtpass.Text;
+
+             da.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+
+                Permisos.Inventario = Convert.ToBoolean(dt.Rows[0][4]);
+                Permisos.Clientes = Convert.ToBoolean(dt.Rows[0][5]);
+                Permisos.Ventas = Convert.ToBoolean(dt.Rows[0][6]);
+                Permisos.Configuracion = Convert.ToBoolean(dt.Rows[0][7]);
+                Permisos.Agregar = Convert.ToBoolean(dt.Rows[0][8]);
+                Permisos.Editar = Convert.ToBoolean(dt.Rows[0][9]);
+                Permisos.Buscar = Convert.ToBoolean(dt.Rows[0][10]);
+                Permisos.Eliminar = Convert.ToBoolean(dt.Rows[0][11]);
+
+
+                Form principal = new Form1();
+                principal.Show();
+                principal.Visible = true;
+                Visible = false;
+            }
+
+            else
+            {
+                MessageBox.Show(" Usuario o contraseña Incorrecto");
+                txtpass.Focus();
+            }
+
+            Conexion.cerrarcon();
         }
     }
 }
