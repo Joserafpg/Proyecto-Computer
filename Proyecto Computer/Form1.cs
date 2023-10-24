@@ -14,6 +14,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Runtime.InteropServices;
 using BunifuAnimatorNS;
 using Bunifu.UI.WinForms;
+using System.Data.SqlClient;
 
 namespace Proyecto_Computer
 {
@@ -90,6 +91,26 @@ namespace Proyecto_Computer
         {
             bordesradius();
             btninicio.PerformClick();
+
+            string connectionString = "Data source = DESKTOP-NDDA7LS; Initial Catalog=Computer; Integrated Security=True";
+
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                conexion.Open();
+
+                string consultaSQL = "SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC";
+
+                using (SqlCommand comando = new SqlCommand(consultaSQL, conexion))
+                {
+                    using (SqlDataReader reader = comando.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            label2.Text = reader["Usuario"].ToString();
+                        }
+                    }
+                }
+            }
         }
 
         private void bunifuIconButton1_Click(object sender, EventArgs e)
@@ -162,16 +183,18 @@ namespace Proyecto_Computer
         private void btnclientes_Click(object sender, EventArgs e)
         {
             text("Clientes", "???.");
+            AbrirFormEnPanel(new Clientes());
         }
 
         private void btnventas_Click(object sender, EventArgs e)
         {
             text("Ventas", "???.");
+            AbrirFormEnPanel(new Ventas());
         }
 
-        private void panelDesktop_SizeChanged(object sender, EventArgs e)
+        private void btnconfiguracion_Click(object sender, EventArgs e)
         {
-
+            text("Configuración", "???.");
         }
     }
 }

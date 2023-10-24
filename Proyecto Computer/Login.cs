@@ -136,11 +136,17 @@ namespace Proyecto_Computer
                 Permisos.Buscar = Convert.ToBoolean(dt.Rows[0][10]);
                 Permisos.Eliminar = Convert.ToBoolean(dt.Rows[0][11]);
 
+                DatosgetRegistro registro = new DatosgetRegistro();
+
+                registro.Usuario = txtuser.Text;
+
+                int resultado = DatosbaseRegistro.Agregar(registro);
 
                 Form principal = new Form1();
                 principal.Show();
                 principal.Visible = true;
                 Visible = false;
+                                
             }
 
             else
