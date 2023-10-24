@@ -117,4 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="code.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="description.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cantidad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="price.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALkAAAAtCAYAAADyWsoJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALLSURBVHhe7d0vbBNhGMfxk0gkEomcRE4ikRg8hgQSxHAY
+        9Ptes0yQLAsKUYUgQWErJhZUHagJ0nv7Z4xBmIDfc/c27NpbKWVdem++T/JZm931buK3t8/96dtsleoM
+        Onf80O/4kd/T41H0C7hiZbbykL92wb3Ii/xujOB6avfL7i3bmQ9+oB1P5FzPm/4wYC3yYT7So2Wv60Zu
+        K0bz/0sbu9kJnY4bOtt4486Ba1UNrmPp2uAbo7pa2duDNjjSW8X32k6ATaCw2+CrEf5hjOy/lfrtp9qQ
+        tSbNOwA2RdDP4PdidJcrvWTfRvDahoDNdqLEvo0RXlyucM/pv9FKhT/T436McnPpIHNbIzgtCtpLrcul
+        PbodpWqlYu5FQNsEH+xaToz2n9LCVy6487kXAG1TnXX5EKNdldqU2xxoIiV24ah2hVS/7Fr6Z1cEWu4o
+        RrwMOWdTkKJTu2JfXtWM9wQ0rQS02UQdyoNMP5xwwIn0VC14N9Mo/m5uIZCOvvXj3AuOdAU/sHaFK5xI
+        mo3kjQuAVBByJI+QI3mEHMkj5EgeIUfyCDmSR8iRPEKO5FnIuc0WSbOQ92d/CSRkktln4eItiUByXHCf
+        snISz4aFQCJ6mRu4+3pikyc2rQC0lrqUH65wT7KDzwc31K4woSeSo5B/tZkoph9k7s2uALRd2Y9PS335
+        PT7MjKQEf5IX+eMY8ao4y4KU1Ebxaal32dJCDkCRgrGdUInRrpfS/9IXBB0tVvgztd5vYqSbSyu+V9h/
+        zr0YaAEF/NDOGMY4N5etoNblI0FHC/XLaeGWqfLcuY3ofOME2qBqUQ6XDvjFsq9W0UY4tYhNNrYe/K8t
+        yqLSf8e2NmR3KnJAis0x8qc2MdalZ1FWqXiPy7FdKtXjt9oOgethE9PaTLWDPOTPYjSvvjSy27dSPNLO
+        enbC/cIfAKzLsdicnTuN3wW0sLLsN3YQK4iPKk7kAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bunifuButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALkAAAAtCAYAAADyWsoJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALTSURBVHhe7d0/bNNAFAZwj4yMjIyMHRk7MnZkYWdBAomh
+        bCzMSAwdkCrUCYnEThiQmLpm6FAxZWsnhsq+u7otf0QH+J79Ak24hhCakHv6nvRT1PrPZfhyubMdO5un
+        umV5q/B+sxfCFl73Rc/770RX6We2nNuBp3lV3dYILqbeHB3dkMYK50q8gRrO8Xf0zREtQt/7gNcawe+g
+        g13TaP57YWfX+869wI4l2NHGiZYKnSvyeCxhl85XozpfydcDeu6QO/cl2hjR/9SGve56f08j+3fVD+ER
+        diBDk3gDRKvCOQ9bGt3ZChtuSw/+286IVhQ65JMihLca4elVVNUT+QqI7YholSG7n/G6rVGOFyaZ6+j2
+        OUShdGHocukYXWapfe+r6IZECcFQ28m5HI32r8q9f4mF57GNiJLSHnXZ1Wi3hWHKTU40yRI5cTR2hhSp
+        70j6YysTpQq53teIN4cMeTSFLDqTM/bNWU29JiC2ElHK6ty5uxnG4s854SST2gloR8bj76IrENkwlJDz
+        WnAyC6OUUoYrPMNJpsmRlegCIisYcjKPISfzGHIyjyEn8xhyMo8hJ/MYcjKPISfzJOS8zJZMk5APJ/9J
+        ZEgtF2jt8ldBZFXh3EGGgO/EFhIZMch6ZbmB3vw4spAoacj1115VPcxeHR5eQ2/OG3qSRadyJ4rRD5kH
+        EwuJkteMx0eVO3eHP2YmSxDwk7yqHmjE2+JRFrJkrBcfFcYua5yAkgVNjstyQ6M9Xl3nnmE2yqBTsvT2
+        za810vHCp+A9uvpvkxsTJWJPjhhqnOMlKxQhfGDQKUHD5rZws1QTdOnRefEWJUCHKHszB/xi6aNVeGiR
+        VlYzycQY/I9DlGmFT8c6djLUnUUbIlq6EM4wpC4vPYoyT+k1Lh/RwCl8GmuQaDnkxrR1E27nHms0r77w
+        CZKnUtxHYwO8Hlx4A0QLIZ0ryHP2N6PPAppaWfYDBGWVt6jEwZ8AAAAASUVORK5CYII=
+</value>
+  </data>
 </root>
