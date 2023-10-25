@@ -735,7 +735,7 @@
             this.btnconfiguracion.OnIdleState.BorderThickness = 1;
             this.btnconfiguracion.OnIdleState.FillColor = System.Drawing.Color.White;
             this.btnconfiguracion.OnIdleState.ForeColor = System.Drawing.Color.Black;
-            this.btnconfiguracion.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnsalir.OnIdleState.IconLeftImage")));
+            this.btnconfiguracion.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnconfiguracion.OnIdleState.IconLeftImage")));
             this.btnconfiguracion.OnIdleState.IconRightImage = null;
             this.btnconfiguracion.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
             this.btnconfiguracion.OnPressedState.BorderRadius = 25;
@@ -852,7 +852,7 @@
             this.btnsalir.OnIdleState.BorderThickness = 1;
             this.btnsalir.OnIdleState.FillColor = System.Drawing.Color.White;
             this.btnsalir.OnIdleState.ForeColor = System.Drawing.Color.Black;
-            this.btnsalir.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton21.OnIdleState.IconLeftImage")));
+            this.btnsalir.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnsalir.OnIdleState.IconLeftImage")));
             this.btnsalir.OnIdleState.IconRightImage = null;
             this.btnsalir.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
             this.btnsalir.OnPressedState.BorderRadius = 25;
@@ -869,6 +869,7 @@
             this.btnsalir.TextMarginLeft = 0;
             this.btnsalir.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnsalir.UseDefaultRadiusAndThickness = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // Form1
             // 

@@ -196,5 +196,12 @@ namespace Proyecto_Computer
         {
             text("Configuración", "???.");
         }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            Login frm = new Login();
+            frm.Show();
+            this.Close();
+        }
     }
 }

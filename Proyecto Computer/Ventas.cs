@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -141,6 +142,7 @@ namespace Proyecto_Computer
                     // Obtener los valores de las columnas "Columna1" y "Columna2"
                     double valor1 = Convert.ToDouble(row.Cells["precios"].Value);
                     int valor2 = Convert.ToInt32(row.Cells["cantidad"].Value);
+
                     // Realizar la multiplicación
                     double resultado = valor1 * valor2;
 
@@ -166,12 +168,37 @@ namespace Proyecto_Computer
                 // Obtener los valores de las columnas "Columna1" y "Columna2"
                 double valor1 = Convert.ToDouble(row.Cells["precios"].Value);
                 int valor2 = Convert.ToInt32(row.Cells["cantidad"].Value);
+
                 // Realizar la multiplicación
                 double resultado = valor1 * valor2;
 
                 // Asignar el resultado a la columna "Resultado" de la fila actual
                 row.Cells["Total"].Value = resultado;
                 SumarColumna();
+            }
+        }
+
+        private void txttotal_TextChanged(object sender, EventArgs e)
+        {
+            if (sender is TextBox textBox)
+            {
+                if (decimal.TryParse(textBox.Text, NumberStyles.AllowThousands | NumberStyles.Currency, CultureInfo.CurrentCulture, out decimal value))
+                {
+                    textBox.Text = value.ToString("N2", CultureInfo.CurrentCulture);
+                    textBox.Select(textBox.Text.Length, 0);
+                }
+            }
+        }
+
+        private void dtgv_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.ColumnIndex >= 0 && dtgv.Columns[e.ColumnIndex].Name == "Total" && e.RowIndex >= 0)
+            {
+                if (e.Value is decimal monto)
+                {
+                    e.Value = monto.ToString("N2");
+                    e.FormattingApplied = true;
+                }
             }
         }
     }

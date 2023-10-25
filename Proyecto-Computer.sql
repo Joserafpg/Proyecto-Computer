@@ -32,10 +32,27 @@ Departamento varchar (30),
 Fecha_Ingreso date,
 )
 
+create table Factura (
+No_Factura INT NOT NULL,
+Codigo INT, 
+Producto varchar (50), 
+Precio decimal (38), 
+Cantidad int,
+SubTotal decimal (38),
+)
+
+/*Tabla facturaTitulo*/
+create table FacturaTittle(
+No_Factura INT IDENTITY (1,1) PRIMARY KEY,
+Empleado varchar (50),
+Cliente varchar (50),
+Fecha datetime,
+Total decimal (38),
+)
+
 
 /*Consultas*/
 select * from Usuarios
-select * from Acceso ORDER BY Fecha ASC
 SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC
 SELECT Empleado FROM Usuarios WHERE Usuario = (SELECT TOP 1 Usuario FROM Acceso ORDER BY Fecha DESC)
 
@@ -45,4 +62,5 @@ delete Acceso
 
 
 drop table Acceso
+drop table Usuarios
 drop database Computer
