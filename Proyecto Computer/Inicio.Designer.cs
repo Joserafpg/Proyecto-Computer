@@ -32,16 +32,16 @@
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.ventasmensuales = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.beneficiobrutomensual = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.valordelinventario = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.productoseninventario = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.bunifuPanel3.SuspendLayout();
             this.bunifuPanel4.SuspendLayout();
@@ -86,7 +86,7 @@
             this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel3.BorderRadius = 35;
             this.bunifuPanel3.BorderThickness = 1;
-            this.bunifuPanel3.Controls.Add(this.label2);
+            this.bunifuPanel3.Controls.Add(this.ventasmensuales);
             this.bunifuPanel3.Controls.Add(this.label1);
             this.bunifuPanel3.Location = new System.Drawing.Point(22, 12);
             this.bunifuPanel3.Name = "bunifuPanel3";
@@ -94,17 +94,17 @@
             this.bunifuPanel3.Size = new System.Drawing.Size(220, 130);
             this.bunifuPanel3.TabIndex = 2;
             // 
-            // label2
+            // ventasmensuales
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(125, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 23);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "000.00";
+            this.ventasmensuales.AutoSize = true;
+            this.ventasmensuales.BackColor = System.Drawing.Color.Transparent;
+            this.ventasmensuales.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ventasmensuales.ForeColor = System.Drawing.SystemColors.Control;
+            this.ventasmensuales.Location = new System.Drawing.Point(125, 59);
+            this.ventasmensuales.Name = "ventasmensuales";
+            this.ventasmensuales.Size = new System.Drawing.Size(70, 23);
+            this.ventasmensuales.TabIndex = 1;
+            this.ventasmensuales.Text = "000.00";
             // 
             // label1
             // 
@@ -126,7 +126,7 @@
             this.bunifuPanel4.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel4.BorderRadius = 35;
             this.bunifuPanel4.BorderThickness = 1;
-            this.bunifuPanel4.Controls.Add(this.label3);
+            this.bunifuPanel4.Controls.Add(this.beneficiobrutomensual);
             this.bunifuPanel4.Controls.Add(this.label4);
             this.bunifuPanel4.Location = new System.Drawing.Point(248, 12);
             this.bunifuPanel4.Name = "bunifuPanel4";
@@ -134,17 +134,17 @@
             this.bunifuPanel4.Size = new System.Drawing.Size(220, 130);
             this.bunifuPanel4.TabIndex = 3;
             // 
-            // label3
+            // beneficiobrutomensual
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(130, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 23);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "000.00";
+            this.beneficiobrutomensual.AutoSize = true;
+            this.beneficiobrutomensual.BackColor = System.Drawing.Color.Transparent;
+            this.beneficiobrutomensual.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.beneficiobrutomensual.ForeColor = System.Drawing.SystemColors.Control;
+            this.beneficiobrutomensual.Location = new System.Drawing.Point(130, 59);
+            this.beneficiobrutomensual.Name = "beneficiobrutomensual";
+            this.beneficiobrutomensual.Size = new System.Drawing.Size(70, 23);
+            this.beneficiobrutomensual.TabIndex = 3;
+            this.beneficiobrutomensual.Text = "000.00";
             // 
             // label4
             // 
@@ -166,7 +166,7 @@
             this.bunifuPanel5.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel5.BorderRadius = 35;
             this.bunifuPanel5.BorderThickness = 1;
-            this.bunifuPanel5.Controls.Add(this.label5);
+            this.bunifuPanel5.Controls.Add(this.valordelinventario);
             this.bunifuPanel5.Controls.Add(this.label6);
             this.bunifuPanel5.Location = new System.Drawing.Point(474, 12);
             this.bunifuPanel5.Name = "bunifuPanel5";
@@ -174,17 +174,17 @@
             this.bunifuPanel5.Size = new System.Drawing.Size(220, 130);
             this.bunifuPanel5.TabIndex = 3;
             // 
-            // label5
+            // valordelinventario
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(128, 59);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 23);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "000.00";
+            this.valordelinventario.AutoSize = true;
+            this.valordelinventario.BackColor = System.Drawing.Color.Transparent;
+            this.valordelinventario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valordelinventario.ForeColor = System.Drawing.SystemColors.Control;
+            this.valordelinventario.Location = new System.Drawing.Point(128, 59);
+            this.valordelinventario.Name = "valordelinventario";
+            this.valordelinventario.Size = new System.Drawing.Size(70, 23);
+            this.valordelinventario.TabIndex = 5;
+            this.valordelinventario.Text = "000.00";
             // 
             // label6
             // 
@@ -206,7 +206,7 @@
             this.bunifuPanel6.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel6.BorderRadius = 35;
             this.bunifuPanel6.BorderThickness = 1;
-            this.bunifuPanel6.Controls.Add(this.label7);
+            this.bunifuPanel6.Controls.Add(this.productoseninventario);
             this.bunifuPanel6.Controls.Add(this.label8);
             this.bunifuPanel6.Location = new System.Drawing.Point(700, 12);
             this.bunifuPanel6.Name = "bunifuPanel6";
@@ -214,17 +214,17 @@
             this.bunifuPanel6.Size = new System.Drawing.Size(220, 130);
             this.bunifuPanel6.TabIndex = 4;
             // 
-            // label7
+            // productoseninventario
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(124, 59);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 23);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "000.00";
+            this.productoseninventario.AutoSize = true;
+            this.productoseninventario.BackColor = System.Drawing.Color.Transparent;
+            this.productoseninventario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productoseninventario.ForeColor = System.Drawing.SystemColors.Control;
+            this.productoseninventario.Location = new System.Drawing.Point(124, 59);
+            this.productoseninventario.Name = "productoseninventario";
+            this.productoseninventario.Size = new System.Drawing.Size(70, 23);
+            this.productoseninventario.TabIndex = 7;
+            this.productoseninventario.Text = "000.00";
             // 
             // label8
             // 
@@ -253,6 +253,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Inicio";
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.Inicio_Load);
             this.bunifuPanel3.ResumeLayout(false);
             this.bunifuPanel3.PerformLayout();
             this.bunifuPanel4.ResumeLayout(false);
@@ -275,12 +276,12 @@
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel5;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label ventasmensuales;
+        private System.Windows.Forms.Label beneficiobrutomensual;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label valordelinventario;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label productoseninventario;
         private System.Windows.Forms.Label label8;
     }
 }

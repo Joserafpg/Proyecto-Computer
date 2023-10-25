@@ -51,8 +51,18 @@ Total decimal (38),
 )
 
 
+/*Procedures*/
+CREATE PROCEDURE VALORDELINVENTARIO
+AS
+SELECT SUM(Cantidad * Precio) AS ValorTotal FROM Productos;
+
+EXEC VALORDELINVENTARIO
+GO
+
+
 /*Consultas*/
-select * from Usuarios
+SELECT * FROM Productos
+SELECT * FROM Usuarios
 SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC
 SELECT Empleado FROM Usuarios WHERE Usuario = (SELECT TOP 1 Usuario FROM Acceso ORDER BY Fecha DESC)
 
@@ -64,3 +74,4 @@ delete Acceso
 drop table Acceso
 drop table Usuarios
 drop database Computer
+DROP PROCEDURE VALORDELINVENTARIO
