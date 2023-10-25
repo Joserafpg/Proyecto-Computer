@@ -60,6 +60,14 @@ EXEC VALORDELINVENTARIO
 GO
 
 
+CREATE PROCEDURE CANTIDADENINVENTARIO
+AS
+SELECT SUM(Cantidad) AS ValorTotal FROM Productos;
+
+EXEC CANTIDADENINVENTARIO
+GO
+
+
 /*Consultas*/
 SELECT * FROM Productos
 SELECT * FROM Usuarios
@@ -67,6 +75,7 @@ SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC
 SELECT Empleado FROM Usuarios WHERE Usuario = (SELECT TOP 1 Usuario FROM Acceso ORDER BY Fecha DESC)
 
 
+/*Limpiar tablas*/
 delete Acceso
 
 

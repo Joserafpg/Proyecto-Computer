@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,12 +39,22 @@ namespace Proyecto_Computer
             }
         }
 
-        private void Inicio_Load(object sender, EventArgs e)
+        void FormatValueInLabel()
+        {
+            if (decimal.TryParse(valordelinventario.Text, NumberStyles.AllowThousands, CultureInfo.CurrentCulture, out decimal value))
+            {
+                valordelinventario.Text = value.ToString("N0", CultureInfo.CurrentCulture);
+            }
+        }
+
+            private void Inicio_Load(object sender, EventArgs e)
         {
             ExecuteProcedureAndDisplayResult("VALORDELINVENTARIO", valordelinventario);
-            //ExecuteProcedureAndDisplayResult("SegundoProcedimiento", txtResult2);
+            ExecuteProcedureAndDisplayResult("CANTIDADENINVENTARIO", productoseninventario);
             //ExecuteProcedureAndDisplayResult("TercerProcedimiento", txtResult3);
             //ExecuteProcedureAndDisplayResult("CuartoProcedimiento", txtResult4);
+
+            FormatValueInLabel();
         }
     }
 }

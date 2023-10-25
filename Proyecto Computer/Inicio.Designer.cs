@@ -100,11 +100,11 @@
             this.ventasmensuales.BackColor = System.Drawing.Color.Transparent;
             this.ventasmensuales.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ventasmensuales.ForeColor = System.Drawing.SystemColors.Control;
-            this.ventasmensuales.Location = new System.Drawing.Point(125, 59);
+            this.ventasmensuales.Location = new System.Drawing.Point(115, 60);
             this.ventasmensuales.Name = "ventasmensuales";
-            this.ventasmensuales.Size = new System.Drawing.Size(70, 23);
+            this.ventasmensuales.Size = new System.Drawing.Size(81, 23);
             this.ventasmensuales.TabIndex = 1;
-            this.ventasmensuales.Text = "000.00";
+            this.ventasmensuales.Text = "000,000";
             // 
             // label1
             // 
@@ -140,11 +140,11 @@
             this.beneficiobrutomensual.BackColor = System.Drawing.Color.Transparent;
             this.beneficiobrutomensual.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beneficiobrutomensual.ForeColor = System.Drawing.SystemColors.Control;
-            this.beneficiobrutomensual.Location = new System.Drawing.Point(130, 59);
+            this.beneficiobrutomensual.Location = new System.Drawing.Point(115, 60);
             this.beneficiobrutomensual.Name = "beneficiobrutomensual";
-            this.beneficiobrutomensual.Size = new System.Drawing.Size(70, 23);
+            this.beneficiobrutomensual.Size = new System.Drawing.Size(81, 23);
             this.beneficiobrutomensual.TabIndex = 3;
-            this.beneficiobrutomensual.Text = "000.00";
+            this.beneficiobrutomensual.Text = "000,000";
             // 
             // label4
             // 
@@ -180,11 +180,11 @@
             this.valordelinventario.BackColor = System.Drawing.Color.Transparent;
             this.valordelinventario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valordelinventario.ForeColor = System.Drawing.SystemColors.Control;
-            this.valordelinventario.Location = new System.Drawing.Point(128, 59);
+            this.valordelinventario.Location = new System.Drawing.Point(115, 60);
             this.valordelinventario.Name = "valordelinventario";
-            this.valordelinventario.Size = new System.Drawing.Size(70, 23);
+            this.valordelinventario.Size = new System.Drawing.Size(81, 23);
             this.valordelinventario.TabIndex = 5;
-            this.valordelinventario.Text = "000.00";
+            this.valordelinventario.Text = "000,000";
             // 
             // label6
             // 
@@ -220,11 +220,11 @@
             this.productoseninventario.BackColor = System.Drawing.Color.Transparent;
             this.productoseninventario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productoseninventario.ForeColor = System.Drawing.SystemColors.Control;
-            this.productoseninventario.Location = new System.Drawing.Point(124, 59);
+            this.productoseninventario.Location = new System.Drawing.Point(155, 60);
             this.productoseninventario.Name = "productoseninventario";
-            this.productoseninventario.Size = new System.Drawing.Size(70, 23);
+            this.productoseninventario.Size = new System.Drawing.Size(43, 23);
             this.productoseninventario.TabIndex = 7;
-            this.productoseninventario.Text = "000.00";
+            this.productoseninventario.Text = "000";
             // 
             // label8
             // 
