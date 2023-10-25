@@ -249,7 +249,7 @@
     <Compile Include="Clases\DatosgetClientes.cs" />
     <Compile Include="Clases\DatosgetRegistro.cs" />
     <Compile Include="Clases\Permisos.cs" />
-    <Compile Include="Clases\Productos.cs" />
+    <Compile Include="Clases\Clases Ventas\Productos.cs" />
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,7 +327,6 @@
   <ItemGroup>
     <Folder Include="Clases\Clases Clientes\" />
     <Folder Include="Clases\Clases Login\" />
-    <Folder Include="Clases\Clases Ventas\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
