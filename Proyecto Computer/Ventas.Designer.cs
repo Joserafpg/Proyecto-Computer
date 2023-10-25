@@ -29,63 +29,62 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventas));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            this.dtgv = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtcodigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txttotal = new System.Windows.Forms.TextBox();
             this.bunifuButton21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuButton22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgv
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgv.AllowUserToAddRows = false;
+            this.dtgv.AllowUserToDeleteRows = false;
+            this.dtgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.code,
             this.name,
-            this.description,
             this.cantidad,
             this.price});
-            this.dataGridView1.Location = new System.Drawing.Point(242, 88);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(503, 200);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgv.Location = new System.Drawing.Point(217, 89);
+            this.dtgv.Name = "dtgv";
+            this.dtgv.ReadOnly = true;
+            this.dtgv.RowHeadersVisible = false;
+            this.dtgv.Size = new System.Drawing.Size(503, 200);
+            this.dtgv.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(445, 0);
+            this.label1.Location = new System.Drawing.Point(424, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Factura";
             // 
-            // textBox1
+            // txtcodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(318, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(104, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtcodigo.Location = new System.Drawing.Point(293, 63);
+            this.txtcodigo.Name = "txtcodigo";
+            this.txtcodigo.Size = new System.Drawing.Size(104, 20);
+            this.txtcodigo.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(272, 65);
+            this.label2.Location = new System.Drawing.Point(247, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 3;
@@ -94,18 +93,18 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(583, 304);
+            this.label3.Location = new System.Drawing.Point(558, 305);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Total";
             // 
-            // textBox2
+            // txttotal
             // 
-            this.textBox2.Location = new System.Drawing.Point(629, 301);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(104, 20);
-            this.textBox2.TabIndex = 4;
+            this.txttotal.Location = new System.Drawing.Point(604, 302);
+            this.txttotal.Name = "txttotal";
+            this.txttotal.Size = new System.Drawing.Size(104, 20);
+            this.txttotal.TabIndex = 4;
             // 
             // bunifuButton21
             // 
@@ -126,11 +125,11 @@
             this.bunifuButton21.ColorContrastOnClick = 45;
             this.bunifuButton21.ColorContrastOnHover = 45;
             this.bunifuButton21.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.bunifuButton21.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.bunifuButton21.CustomizableEdges = borderEdges1;
             this.bunifuButton21.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton21.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton21.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -154,7 +153,7 @@
             this.bunifuButton21.IdleIconLeftImage = null;
             this.bunifuButton21.IdleIconRightImage = null;
             this.bunifuButton21.IndicateFocus = false;
-            this.bunifuButton21.Location = new System.Drawing.Point(297, 349);
+            this.bunifuButton21.Location = new System.Drawing.Point(272, 350);
             this.bunifuButton21.Name = "bunifuButton21";
             this.bunifuButton21.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton21.OnDisabledState.BorderRadius = 35;
@@ -215,11 +214,11 @@
             this.bunifuButton22.ColorContrastOnClick = 45;
             this.bunifuButton22.ColorContrastOnHover = 45;
             this.bunifuButton22.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.bunifuButton22.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.bunifuButton22.CustomizableEdges = borderEdges2;
             this.bunifuButton22.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton22.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton22.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -243,7 +242,7 @@
             this.bunifuButton22.IdleIconLeftImage = null;
             this.bunifuButton22.IdleIconRightImage = null;
             this.bunifuButton22.IndicateFocus = false;
-            this.bunifuButton22.Location = new System.Drawing.Point(502, 349);
+            this.bunifuButton22.Location = new System.Drawing.Point(477, 350);
             this.bunifuButton22.Name = "bunifuButton22";
             this.bunifuButton22.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton22.OnDisabledState.BorderRadius = 35;
@@ -284,6 +283,7 @@
             this.bunifuButton22.TextMarginLeft = 0;
             this.bunifuButton22.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton22.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton22.Click += new System.EventHandler(this.bunifuButton22_Click);
             // 
             // code
             // 
@@ -296,12 +296,7 @@
             this.name.HeaderText = "Nombre";
             this.name.Name = "name";
             this.name.ReadOnly = true;
-            // 
-            // description
-            // 
-            this.description.HeaderText = "Descrepcion";
-            this.description.Name = "description";
-            this.description.ReadOnly = true;
+            this.name.Width = 200;
             // 
             // cantidad
             // 
@@ -323,15 +318,15 @@
             this.Controls.Add(this.bunifuButton22);
             this.Controls.Add(this.bunifuButton21);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txttotal);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtcodigo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ventas";
             this.Text = "Ventas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,17 +334,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgv;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtcodigo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txttotal;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton21;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton22;
         private System.Windows.Forms.DataGridViewTextBoxColumn code;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn description;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
     }

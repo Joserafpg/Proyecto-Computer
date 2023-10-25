@@ -16,5 +16,17 @@ namespace Proyecto_Computer
         {
             InitializeComponent();
         }
+
+        void Limpiar()
+        {
+            txtcodigo.Clear();
+            txttotal.Clear();
+            dtgv.Rows.Clear();
+        }
+
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
     }
 }
