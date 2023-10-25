@@ -32,6 +32,11 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.dtgv = new System.Windows.Forms.DataGridView();
+            this.codigos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precios = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtcodigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,10 +44,8 @@
             this.txttotal = new System.Windows.Forms.TextBox();
             this.bunifuButton21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuButton22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,16 +56,48 @@
             this.dtgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.code,
+            this.codigos,
             this.name,
+            this.precios,
             this.cantidad,
-            this.price});
+            this.Total});
             this.dtgv.Location = new System.Drawing.Point(217, 89);
             this.dtgv.Name = "dtgv";
-            this.dtgv.ReadOnly = true;
             this.dtgv.RowHeadersVisible = false;
             this.dtgv.Size = new System.Drawing.Size(503, 200);
             this.dtgv.TabIndex = 0;
+            this.dtgv.CurrentCellChanged += new System.EventHandler(this.dtgv_CurrentCellChanged);
+            // 
+            // codigos
+            // 
+            this.codigos.HeaderText = "Codigo";
+            this.codigos.Name = "codigos";
+            this.codigos.ReadOnly = true;
+            this.codigos.Width = 50;
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Nombre";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 150;
+            // 
+            // precios
+            // 
+            this.precios.HeaderText = "Precio";
+            this.precios.Name = "precios";
+            this.precios.ReadOnly = true;
+            // 
+            // cantidad
+            // 
+            this.cantidad.HeaderText = "Cantidad";
+            this.cantidad.Name = "cantidad";
+            // 
+            // Total
+            // 
+            this.Total.HeaderText = "Total";
+            this.Total.Name = "Total";
+            this.Total.ReadOnly = true;
             // 
             // label1
             // 
@@ -76,15 +111,15 @@
             // 
             // txtcodigo
             // 
-            this.txtcodigo.Location = new System.Drawing.Point(293, 63);
+            this.txtcodigo.Location = new System.Drawing.Point(293, 62);
             this.txtcodigo.Name = "txtcodigo";
-            this.txtcodigo.Size = new System.Drawing.Size(104, 20);
+            this.txtcodigo.Size = new System.Drawing.Size(150, 20);
             this.txtcodigo.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(247, 66);
+            this.label2.Location = new System.Drawing.Point(247, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 3;
@@ -103,6 +138,7 @@
             // 
             this.txttotal.Location = new System.Drawing.Point(604, 302);
             this.txttotal.Name = "txttotal";
+            this.txttotal.ReadOnly = true;
             this.txttotal.Size = new System.Drawing.Size(104, 20);
             this.txttotal.TabIndex = 4;
             // 
@@ -285,36 +321,32 @@
             this.bunifuButton22.UseDefaultRadiusAndThickness = true;
             this.bunifuButton22.Click += new System.EventHandler(this.bunifuButton22_Click);
             // 
-            // code
+            // button1
             // 
-            this.code.HeaderText = "Codigo";
-            this.code.Name = "code";
-            this.code.ReadOnly = true;
+            this.button1.Location = new System.Drawing.Point(217, 295);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // name
+            // button2
             // 
-            this.name.HeaderText = "Nombre";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            this.name.Width = 200;
-            // 
-            // cantidad
-            // 
-            this.cantidad.HeaderText = "Cantidad";
-            this.cantidad.Name = "cantidad";
-            this.cantidad.ReadOnly = true;
-            // 
-            // price
-            // 
-            this.price.HeaderText = "Precio";
-            this.price.Name = "price";
-            this.price.ReadOnly = true;
+            this.button2.Location = new System.Drawing.Point(449, 60);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(92, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Agregar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.bunifuButton22);
             this.Controls.Add(this.bunifuButton21);
             this.Controls.Add(this.label3);
@@ -342,9 +374,12 @@
         private System.Windows.Forms.TextBox txttotal;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton21;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn code;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigos;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precios;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Total;
     }
 }

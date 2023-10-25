@@ -22,7 +22,6 @@ Usuario varchar (10),
 Fecha datetime,
 )
 
-
 create table Productos (
 Id_Producto INT IDENTITY (1,1) PRIMARY KEY NOT NULL,
 Nombre varchar (30),
@@ -33,10 +32,17 @@ Departamento varchar (30),
 Fecha_Ingreso date,
 )
 
+
+/*Consultas*/
 select * from Usuarios
 select * from Acceso ORDER BY Fecha ASC
 SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC
 SELECT Empleado FROM Usuarios WHERE Usuario = (SELECT TOP 1 Usuario FROM Acceso ORDER BY Fecha DESC)
+
+
+
+
+
 
 drop table Acceso
 drop database Computer

@@ -234,6 +234,7 @@
     <Compile Include="Clases\DatosgetClientes.cs" />
     <Compile Include="Clases\DatosgetRegistro.cs" />
     <Compile Include="Clases\Permisos.cs" />
+    <Compile Include="Clases\Productos.cs" />
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
