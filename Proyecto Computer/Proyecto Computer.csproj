@@ -238,15 +238,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuscarCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BuscarCliente.Designer.cs">
-      <DependentUpon>BuscarCliente.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Clases\Clases Clientes\datosbaseclientes.cs" />
+    <Compile Include="Clases\Clases Clientes\datosgetclientes.cs" />
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\DatosbaseRegistro.cs" />
-    <Compile Include="Clases\DatosgetClientes.cs" />
     <Compile Include="Clases\DatosgetRegistro.cs" />
     <Compile Include="Clases\Permisos.cs" />
     <Compile Include="Clases\Clases Ventas\Productos.cs" />
@@ -282,9 +277,6 @@
     <Compile Include="Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BuscarCliente.resx">
-      <DependentUpon>BuscarCliente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,7 +317,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Clases\Clases Clientes\" />
     <Folder Include="Clases\Clases Login\" />
   </ItemGroup>
   <ItemGroup>

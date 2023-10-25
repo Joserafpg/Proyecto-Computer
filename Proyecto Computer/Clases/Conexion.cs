@@ -10,7 +10,7 @@ namespace Proyecto_Computer.Clases
 {
     public class Conexion
     {
-        private static SqlConnection Conn = new SqlConnection("Data source = DESKTOP-NDDA7LS; Initial Catalog=Computer; Integrated Security=True");
+        private static SqlConnection Conn = new SqlConnection("Data source = DESKTOP-EO4FJKE; Initial Catalog=Computer; Integrated Security=True");
 
         public static SqlConnection ObtenerConexion()
         {

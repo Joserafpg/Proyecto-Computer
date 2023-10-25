@@ -40,6 +40,15 @@ Precio decimal (38),
 Cantidad int,
 SubTotal decimal (38),
 )
+create table Clientes (
+codigo INT IDENTITY (1,1) PRIMARY KEY NOT NULL, 
+nombre varchar(50),
+telefono varchar (50),
+correo varchar (50),
+direccion varchar (50),
+fecha_ingreso date
+)
+
 
 /*Tabla facturaTitulo*/
 create table FacturaTittle(
