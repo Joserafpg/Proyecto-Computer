@@ -238,6 +238,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarCliente.Designer.cs">
+      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Clases Clientes\datosbaseclientes.cs" />
     <Compile Include="Clases\Clases Clientes\datosgetclientes.cs" />
     <Compile Include="Clases\Conexion.cs" />

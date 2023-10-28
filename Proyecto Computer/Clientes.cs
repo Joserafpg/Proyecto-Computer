@@ -20,7 +20,26 @@ namespace Proyecto_Computer
         public datosgetclientes ClienteActual { get; set; }
         private void bunifuButton4_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Esta seguro que desea eliminar el cliente actual??", "Esta Seguro?!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Int64 resultado = datosbaseclientes.Eliminar((int)ClienteActual.codigo);
+                if (resultado > 0)
+                {
+                    MessageBox.Show("Estudiantes eliminados", "Estudiante Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Refresh();
+                    btneliminar.Enabled = false;
+                    btnmodificar.Enabled = false;
+                    btnagregar.Enabled = true;
+                }
 
+                else
+                {
+                    MessageBox.Show("No se pudo eliminar al cliente", "Cliente eliminado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+
+            else
+                MessageBox.Show("Se cancelo la eliminacion", "Cancelado");
         }
 
         private void btnagregar_Click(object sender, EventArgs e)
@@ -53,6 +72,28 @@ namespace Proyecto_Computer
 
         private void btnmodificar_Click(object sender, EventArgs e)
         {
+            datosgetclientes pClientes = new datosgetclientes();
+            pClientes.nombre = txtnombre.Text;
+            pClientes.direccion = txtdireccion.Text;
+            pClientes.telefono = txttelefono.Text;
+            pClientes.correo = txtcorreo.Text;
+            pClientes.fecha_ingreso = datetimepicker.Value;
+            pClientes.codigo = ClienteActual.codigo;
+
+            int Resultado = datosbaseclientes.Modificar(pClientes);
+
+            if (Resultado > 0)
+            {
+                MessageBox.Show("Cliente Modificado con exito", "Cliente modificado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Refresh();
+                btneliminar.Enabled = false;
+                btnmodificar.Enabled = false;
+                btnagregar.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("No se pudo modificar el Cliente", "Ocurrio un error!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
 
         }
     }
