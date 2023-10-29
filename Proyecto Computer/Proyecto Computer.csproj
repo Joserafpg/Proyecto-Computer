@@ -246,6 +246,8 @@
     </Compile>
     <Compile Include="Clases\Clases Clientes\datosbaseclientes.cs" />
     <Compile Include="Clases\Clases Clientes\datosgetclientes.cs" />
+    <Compile Include="Clases\Clases Ventas\DatosbaseFactura.cs" />
+    <Compile Include="Clases\Clases Ventas\Datosgetfactura.cs" />
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\DatosbaseRegistro.cs" />
     <Compile Include="Clases\DatosgetRegistro.cs" />

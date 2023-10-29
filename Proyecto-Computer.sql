@@ -80,6 +80,8 @@ GO
 /*Consultas*/
 SELECT * FROM Productos
 SELECT * FROM Usuarios
+SELECT * FROM Factura
+SELECT * FROM FacturaTittle
 SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC
 SELECT Empleado FROM Usuarios WHERE Usuario = (SELECT TOP 1 Usuario FROM Acceso ORDER BY Fecha DESC)
 
@@ -91,5 +93,6 @@ delete Acceso
 
 drop table Acceso
 drop table Factura
+drop table FacturaTittle
 drop database Computer
 DROP PROCEDURE VALORDELINVENTARIO
