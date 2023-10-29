@@ -46,9 +46,9 @@
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(168, 68);
+            this.txtbuscar.Location = new System.Drawing.Point(148, 67);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(100, 20);
+            this.txtbuscar.Size = new System.Drawing.Size(126, 20);
             this.txtbuscar.TabIndex = 1;
             // 
             // btnbuscar
@@ -57,7 +57,7 @@
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(75, 23);
             this.btnbuscar.TabIndex = 2;
-            this.btnbuscar.Text = "button1";
+            this.btnbuscar.Text = "Buscar";
             this.btnbuscar.UseVisualStyleBackColor = true;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 

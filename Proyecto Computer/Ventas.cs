@@ -125,6 +125,7 @@ namespace Proyecto_Computer
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
             Limpiar();
+            Limpiar();
         }
 
         private void button2_Click(object sender, EventArgs e)

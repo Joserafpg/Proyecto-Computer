@@ -82,7 +82,7 @@ namespace Proyecto_Computer
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-
+            MostrarDatosInvPantalones();
         }
     }
 }
