@@ -92,12 +92,25 @@ END;
 EXEC SumarTotalPorMes;
 
 
+create proc busquedaClienteFacturaPrueba
+@numFact varchar(15)
+as select No_Factura, Empleado, Cliente, Fecha, Total from FacturaTittle where No_Factura = @numFact
+go
+
+CREATE PROC busquedaDetallePrueba
+@numFact VARCHAR(15)
+AS
+SELECT Codigo, Producto, Precio, Cantidad, SubTotal FROM Factura WHERE No_Factura = @numFact
+
+
 /*Consultas*/
 SELECT * FROM Productos
 SELECT * FROM Usuarios
 SELECT * FROM Factura
 SELECT * FROM FacturaTittle
 SELECT * FROM Acceso
+
+select Codigo, Producto, Precio,Cantidad,SubTotal from Factura where No_Factura = 1;
 
 SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC
 SELECT Empleado FROM Usuarios WHERE Usuario = (SELECT TOP 1 Usuario FROM Acceso ORDER BY Fecha DESC)
