@@ -97,6 +97,8 @@ SELECT * FROM Productos
 SELECT * FROM Usuarios
 SELECT * FROM Factura
 SELECT * FROM FacturaTittle
+SELECT * FROM Acceso
+
 SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC
 SELECT Empleado FROM Usuarios WHERE Usuario = (SELECT TOP 1 Usuario FROM Acceso ORDER BY Fecha DESC)
 

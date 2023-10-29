@@ -96,15 +96,15 @@
             // 
             // ventasmensuales
             // 
-            this.ventasmensuales.AutoSize = true;
             this.ventasmensuales.BackColor = System.Drawing.Color.Transparent;
             this.ventasmensuales.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ventasmensuales.ForeColor = System.Drawing.SystemColors.Control;
-            this.ventasmensuales.Location = new System.Drawing.Point(115, 60);
+            this.ventasmensuales.Location = new System.Drawing.Point(20, 60);
             this.ventasmensuales.Name = "ventasmensuales";
-            this.ventasmensuales.Size = new System.Drawing.Size(81, 23);
+            this.ventasmensuales.Size = new System.Drawing.Size(175, 23);
             this.ventasmensuales.TabIndex = 1;
             this.ventasmensuales.Text = "000,000";
+            this.ventasmensuales.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
@@ -136,15 +136,15 @@
             // 
             // beneficiobrutomensual
             // 
-            this.beneficiobrutomensual.AutoSize = true;
             this.beneficiobrutomensual.BackColor = System.Drawing.Color.Transparent;
             this.beneficiobrutomensual.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beneficiobrutomensual.ForeColor = System.Drawing.SystemColors.Control;
-            this.beneficiobrutomensual.Location = new System.Drawing.Point(115, 60);
+            this.beneficiobrutomensual.Location = new System.Drawing.Point(20, 60);
             this.beneficiobrutomensual.Name = "beneficiobrutomensual";
-            this.beneficiobrutomensual.Size = new System.Drawing.Size(81, 23);
+            this.beneficiobrutomensual.Size = new System.Drawing.Size(175, 23);
             this.beneficiobrutomensual.TabIndex = 3;
             this.beneficiobrutomensual.Text = "000,000";
+            this.beneficiobrutomensual.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label4
             // 
@@ -176,15 +176,15 @@
             // 
             // valordelinventario
             // 
-            this.valordelinventario.AutoSize = true;
             this.valordelinventario.BackColor = System.Drawing.Color.Transparent;
             this.valordelinventario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valordelinventario.ForeColor = System.Drawing.SystemColors.Control;
-            this.valordelinventario.Location = new System.Drawing.Point(115, 60);
+            this.valordelinventario.Location = new System.Drawing.Point(20, 60);
             this.valordelinventario.Name = "valordelinventario";
-            this.valordelinventario.Size = new System.Drawing.Size(81, 23);
+            this.valordelinventario.Size = new System.Drawing.Size(175, 23);
             this.valordelinventario.TabIndex = 5;
             this.valordelinventario.Text = "000,000";
+            this.valordelinventario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label6
             // 
@@ -216,15 +216,15 @@
             // 
             // productoseninventario
             // 
-            this.productoseninventario.AutoSize = true;
             this.productoseninventario.BackColor = System.Drawing.Color.Transparent;
             this.productoseninventario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productoseninventario.ForeColor = System.Drawing.SystemColors.Control;
-            this.productoseninventario.Location = new System.Drawing.Point(155, 60);
+            this.productoseninventario.Location = new System.Drawing.Point(20, 60);
             this.productoseninventario.Name = "productoseninventario";
-            this.productoseninventario.Size = new System.Drawing.Size(43, 23);
+            this.productoseninventario.Size = new System.Drawing.Size(175, 23);
             this.productoseninventario.TabIndex = 7;
             this.productoseninventario.Text = "000";
+            this.productoseninventario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
@@ -277,11 +277,11 @@
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label ventasmensuales;
-        private System.Windows.Forms.Label beneficiobrutomensual;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label valordelinventario;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label productoseninventario;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label beneficiobrutomensual;
     }
 }
