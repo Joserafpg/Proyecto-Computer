@@ -32,14 +32,6 @@ Departamento varchar (30),
 Fecha_Ingreso date,
 )
 
-create table Factura (
-No_Factura INT NOT NULL,
-Codigo INT, 
-Producto varchar (50), 
-Precio decimal (38), 
-Cantidad int,
-SubTotal decimal (38),
-)
 create table Clientes (
 codigo INT IDENTITY (1,1) PRIMARY KEY NOT NULL, 
 nombre varchar(50),
@@ -49,14 +41,22 @@ direccion varchar (50),
 fecha_ingreso date
 )
 
-
 /*Tabla facturaTitulo*/
 create table FacturaTittle(
-No_Factura INT IDENTITY (1,1) PRIMARY KEY,
+No_Factura INT IDENTITY (1,1) PRIMARY KEY NOT NULL,
 Empleado varchar (50),
 Cliente varchar (50),
 Fecha datetime,
 Total decimal (38),
+)
+
+create table Factura (
+No_Factura INT NOT NULL,
+Codigo INT, 
+Producto varchar (50), 
+Precio decimal (38), 
+Cantidad int,
+SubTotal decimal (38),
 )
 
 
@@ -90,6 +90,6 @@ delete Acceso
 
 
 drop table Acceso
-drop table Usuarios
+drop table Factura
 drop database Computer
 DROP PROCEDURE VALORDELINVENTARIO

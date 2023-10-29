@@ -20,6 +20,14 @@ namespace Proyecto_Computer
             InitializeComponent();
         }
 
+        private DataGridView _DTProductos;
+        public DataGridView DTProductos { get => _DTProductos; set => _DTProductos = value; }
+
+        public void DT_Productos()
+        {
+            _DTProductos = dtgv;
+        }
+
         void SumarColumna()
         {
             double Total = 0;
@@ -184,7 +192,7 @@ namespace Proyecto_Computer
             {
                 if (decimal.TryParse(textBox.Text, NumberStyles.AllowThousands | NumberStyles.Currency, CultureInfo.CurrentCulture, out decimal value))
                 {
-                    textBox.Text = value.ToString("N2", CultureInfo.CurrentCulture);
+                    textBox.Text = value.ToString("N0", CultureInfo.CurrentCulture);
                     textBox.Select(textBox.Text.Length, 0);
                 }
             }
@@ -200,6 +208,23 @@ namespace Proyecto_Computer
                     e.FormattingApplied = true;
                 }
             }
+        }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ProductoFacturaNew frm = new ProductoFacturaNew();
+            AddOwnedForm(frm);
+            frm.ShowDialog();
+        }
+
+        private void Ventas_Load(object sender, EventArgs e)
+        {
+            DT_Productos();
         }
     }
 }
