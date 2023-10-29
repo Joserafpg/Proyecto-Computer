@@ -41,9 +41,14 @@ namespace Proyecto_Computer
 
         void FormatValueInLabel()
         {
-            if (decimal.TryParse(valordelinventario.Text, NumberStyles.AllowThousands, CultureInfo.CurrentCulture, out decimal value))
+            Label[] labels = { valordelinventario, productoseninventario, ventasmensuales, beneficiobrutomensual };
+
+            foreach (Label label in labels)
             {
-                valordelinventario.Text = value.ToString("N0", CultureInfo.CurrentCulture);
+                if (decimal.TryParse(label.Text, NumberStyles.AllowThousands, CultureInfo.CurrentCulture, out decimal value))
+                {
+                    label.Text = value.ToString("N0", CultureInfo.CurrentCulture);
+                }
             }
         }
 
@@ -51,8 +56,8 @@ namespace Proyecto_Computer
         {
             ExecuteProcedureAndDisplayResult("VALORDELINVENTARIO", valordelinventario);
             ExecuteProcedureAndDisplayResult("CANTIDADENINVENTARIO", productoseninventario);
-            //ExecuteProcedureAndDisplayResult("TercerProcedimiento", txtResult3);
-            //ExecuteProcedureAndDisplayResult("CuartoProcedimiento", txtResult4);
+            ExecuteProcedureAndDisplayResult("SumarTotalPorMes", ventasmensuales);
+            //ExecuteProcedureAndDisplayResult("CuartoProcedimiento", beneficiobrutomensual);
 
             FormatValueInLabel();
         }

@@ -258,17 +258,9 @@ namespace Proyecto_Computer
                     // Mostrar el último Id_Factura en un TextBox
                     txtidfactura.Text = ultimoIdFactura.ToString();
                 }
-
-                else
-                {
-                    // No se encontraron registros en la tabla FacturaTittle
-                    // Puedes mostrar un valor predeterminado o dejar el TextBox vacío
-                    txtidfactura.Text = "No hay registros";
-                }
             }
 
             conn.Close();
-
 
             SqlCommand agregar = new SqlCommand("INSERT INTO Factura VALUES (@No_Factura , @Codigo, @Producto, @Precio, @Cantidad, @Total)", conn);
             string verificarQuery = "SELECT Cantidad FROM Productos WHERE Nombre = @Producto";

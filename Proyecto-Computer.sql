@@ -77,6 +77,21 @@ EXEC CANTIDADENINVENTARIO
 GO
 
 
+CREATE PROCEDURE SumarTotalPorMes
+AS
+BEGIN
+    DECLARE @MesActual INT;
+    SET @MesActual = MONTH(GETDATE());
+
+    -- Filtrar por el mes actual
+    SELECT SUM(Total) AS TotalMensual
+    FROM FacturaTittle
+    WHERE MONTH(Fecha) = @MesActual;
+END;
+
+EXEC SumarTotalPorMes;
+
+
 /*Consultas*/
 SELECT * FROM Productos
 SELECT * FROM Usuarios
@@ -95,4 +110,5 @@ drop table Acceso
 drop table Factura
 drop table FacturaTittle
 drop database Computer
+
 DROP PROCEDURE VALORDELINVENTARIO
