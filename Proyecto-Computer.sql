@@ -169,6 +169,19 @@ FROM Factura F
 JOIN Productos P ON F.Codigo = P.Id_Producto;
 
 
+SELECT 
+    F.No_Factura,
+    F.Producto,
+    F.Precio AS Precio_Venta,
+    F.Cantidad,
+    F.SubTotal AS Ingresos,
+    P.Precio_Compra AS Precio_Compra,
+    (F.Precio - P.Precio_Compra) * F.Cantidad AS Beneficio_Adquirido
+FROM Factura F
+JOIN Productos P ON F.Codigo = P.Id_Producto
+ORDER BY F.No_Factura ASC;
+
+
 /*Limpiar tablas*/
 delete Acceso
 
