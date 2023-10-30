@@ -12,6 +12,10 @@ namespace Proyecto_Computer.Clases
         {
         }
 
+        public static bool Empleados { set; get; }
+        public static bool Caja { set; get; }
+        public static bool Tecnico { set; get; }
+        public static bool Administrador { set; get; }
         public static bool Inventario { set; get; }
         public static bool Clientes { set; get; }
         public static bool Ventas { set; get; }

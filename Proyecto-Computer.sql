@@ -7,6 +7,10 @@ Id_Usuario int IDENTITY (1,1) NOT NULL,
 Empleado varchar (50),
 Usuario varchar (10),
 Contraseña varchar(30),
+Empleados bit,
+Caja bit,
+Tecnico bit,
+Administrador bit,
 Inventario bit,
 Clientes bit,
 Ventas bit,
@@ -122,6 +126,7 @@ delete Acceso
 
 
 drop table Acceso
+drop table Usuarios
 drop table Factura
 drop table FacturaTittle
 drop database Computer

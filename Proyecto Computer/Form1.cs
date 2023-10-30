@@ -15,6 +15,7 @@ using System.Runtime.InteropServices;
 using BunifuAnimatorNS;
 using Bunifu.UI.WinForms;
 using System.Data.SqlClient;
+using Proyecto_Computer.Clases;
 
 namespace Proyecto_Computer
 {
@@ -111,6 +112,11 @@ namespace Proyecto_Computer
                     }
                 }
             }
+
+            bunifuLabel2.Text = Permisos.Administrador ? "Admin" :
+                                Permisos.Tecnico ? "Tecnico" :
+                                Permisos.Caja ? "Caja" :
+                                Permisos.Empleados ? "Empleado" : "";
         }
 
         private void bunifuIconButton1_Click(object sender, EventArgs e)

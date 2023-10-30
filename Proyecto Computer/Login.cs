@@ -127,14 +127,18 @@ namespace Proyecto_Computer
             if (dt.Rows.Count > 0)
             {
 
-                Permisos.Inventario = Convert.ToBoolean(dt.Rows[0][4]);
-                Permisos.Clientes = Convert.ToBoolean(dt.Rows[0][5]);
-                Permisos.Ventas = Convert.ToBoolean(dt.Rows[0][6]);
-                Permisos.Configuracion = Convert.ToBoolean(dt.Rows[0][7]);
-                Permisos.Agregar = Convert.ToBoolean(dt.Rows[0][8]);
-                Permisos.Editar = Convert.ToBoolean(dt.Rows[0][9]);
-                Permisos.Buscar = Convert.ToBoolean(dt.Rows[0][10]);
-                Permisos.Eliminar = Convert.ToBoolean(dt.Rows[0][11]);
+                Permisos.Empleados = Convert.ToBoolean(dt.Rows[0][4]);
+                Permisos.Caja = Convert.ToBoolean(dt.Rows[0][5]);
+                Permisos.Tecnico = Convert.ToBoolean(dt.Rows[0][6]);
+                Permisos.Administrador = Convert.ToBoolean(dt.Rows[0][7]);
+                Permisos.Inventario = Convert.ToBoolean(dt.Rows[0][8]);
+                Permisos.Clientes = Convert.ToBoolean(dt.Rows[0][9]);
+                Permisos.Ventas = Convert.ToBoolean(dt.Rows[0][10]);
+                Permisos.Configuracion = Convert.ToBoolean(dt.Rows[0][11]);
+                Permisos.Agregar = Convert.ToBoolean(dt.Rows[0][12]);
+                Permisos.Editar = Convert.ToBoolean(dt.Rows[0][13]);
+                Permisos.Buscar = Convert.ToBoolean(dt.Rows[0][14]);
+                Permisos.Eliminar = Convert.ToBoolean(dt.Rows[0][15]);
 
                 DatosgetRegistro registro = new DatosgetRegistro();
 
