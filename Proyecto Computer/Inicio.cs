@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Computer.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,6 +40,21 @@ namespace Proyecto_Computer
             }
         }
 
+        private void MostrarVentas()
+        {
+            /*String query = "SELECT TOP 3 * FROM FacturaTittle ORDER BY Fecha DESC;";
+
+
+            Conexion.opencon();
+            SqlCommand cmd = new SqlCommand(query, Conexion.ObtenerConexion());
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dtventas.DataSource = ds.Tables[0];
+            Conexion.cerrarcon();*/
+        }
+
+
         void FormatValueInLabel()
         {
             Label[] labels = { valordelinventario, productoseninventario, ventasmensuales, beneficiobrutomensual };
@@ -52,7 +68,7 @@ namespace Proyecto_Computer
             }
         }
 
-            private void Inicio_Load(object sender, EventArgs e)
+        private void Inicio_Load(object sender, EventArgs e)
         {
             ExecuteProcedureAndDisplayResult("VALORDELINVENTARIO", valordelinventario);
             ExecuteProcedureAndDisplayResult("CANTIDADENINVENTARIO", productoseninventario);
@@ -60,6 +76,7 @@ namespace Proyecto_Computer
             //ExecuteProcedureAndDisplayResult("CuartoProcedimiento", beneficiobrutomensual);
 
             FormatValueInLabel();
+            MostrarVentas();
         }
     }
 }

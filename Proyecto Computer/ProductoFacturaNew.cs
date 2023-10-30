@@ -19,8 +19,7 @@ namespace Proyecto_Computer
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection("Data source = DESKTOP-NDDA7LS; Initial Catalog = Computer; Integrated Security = True");
-        private void MostrarDatosInvPantalones()
+        private void MostrarDatos()
         {
             String query = "SELECT Id_Producto, Nombre, Precio, Cantidad FROM Productos where ";
 
@@ -77,12 +76,12 @@ namespace Proyecto_Computer
 
         private void ProductoFacturaNew_Load(object sender, EventArgs e)
         {
-            MostrarDatosInvPantalones();
+            MostrarDatos();
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-            MostrarDatosInvPantalones();
+            MostrarDatos();
         }
     }
 }

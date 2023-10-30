@@ -118,7 +118,7 @@ select Codigo, Producto, Precio,Cantidad,SubTotal from Factura where No_Factura 
 
 SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC
 SELECT Empleado FROM Usuarios WHERE Usuario = (SELECT TOP 1 Usuario FROM Acceso ORDER BY Fecha DESC)
-
+SELECT TOP 3 * FROM FacturaTittle ORDER BY Fecha DESC;
 
 /*Limpiar tablas*/
 delete Acceso
