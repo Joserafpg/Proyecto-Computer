@@ -73,7 +73,7 @@ namespace Proyecto_Computer
             ExecuteProcedureAndDisplayResult("VALORDELINVENTARIO", valordelinventario);
             ExecuteProcedureAndDisplayResult("CANTIDADENINVENTARIO", productoseninventario);
             ExecuteProcedureAndDisplayResult("SumarTotalPorMes", ventasmensuales);
-            //ExecuteProcedureAndDisplayResult("CuartoProcedimiento", beneficiobrutomensual);
+            ExecuteProcedureAndDisplayResult("SumarBeneficioMensual", beneficiobrutomensual);
 
             FormatValueInLabel();
             MostrarVentas();

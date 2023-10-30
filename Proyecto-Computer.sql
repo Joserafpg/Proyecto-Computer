@@ -96,6 +96,42 @@ END;
 EXEC SumarTotalPorMes;
 
 
+
+/*CREATE PROCEDURE SumarBeneficioAdquirido
+AS
+BEGIN
+    SELECT SUM((F.Precio - P.Precio_Compra) * F.Cantidad) AS TotalBeneficio
+    FROM Factura F
+    JOIN Productos P ON F.Codigo = P.Id_Producto;
+END;
+
+EXEC SumarBeneficioAdquirido;*/
+
+
+CREATE PROCEDURE SumarBeneficioMensual
+AS
+BEGIN
+    DECLARE @FechaInicio DATETIME;
+    DECLARE @FechaFin DATETIME;
+
+    -- Obtener la fecha de inicio del mes actual
+    SET @FechaInicio = DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()), 0);
+
+    -- Obtener la fecha de fin del mes actual
+    SET @FechaFin = DATEADD(MONTH, 1, @FechaInicio);
+
+    SELECT SUM((F.Precio - P.Precio_Compra) * F.Cantidad) AS TotalBeneficio
+    FROM Factura F
+    JOIN Productos P ON F.Codigo = P.Id_Producto
+    JOIN FacturaTittle FT ON F.No_Factura = FT.No_Factura
+    WHERE FT.Fecha >= @FechaInicio AND FT.Fecha < @FechaFin;
+END;
+
+EXEC SumarBeneficioMensual;
+
+
+
+
 create proc busquedaClienteFacturaPrueba
 @numFact varchar(15)
 as select No_Factura, Empleado, Cliente, Fecha, Total from FacturaTittle where No_Factura = @numFact
@@ -120,6 +156,19 @@ SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC
 SELECT Empleado FROM Usuarios WHERE Usuario = (SELECT TOP 1 Usuario FROM Acceso ORDER BY Fecha DESC)
 SELECT TOP 3 * FROM FacturaTittle ORDER BY Fecha DESC;
 
+
+SELECT 
+    F.No_Factura,
+    F.Producto,
+    F.Precio AS Precio_Venta,
+    F.Cantidad,
+    F.SubTotal AS Ingresos,
+    P.Precio_Compra AS Precio_Compra,
+    (F.Precio - P.Precio_Compra) * F.Cantidad AS Beneficio_Adquirido
+FROM Factura F
+JOIN Productos P ON F.Codigo = P.Id_Producto;
+
+
 /*Limpiar tablas*/
 delete Acceso
 
@@ -131,4 +180,4 @@ drop table Factura
 drop table FacturaTittle
 drop database Computer
 
-DROP PROCEDURE VALORDELINVENTARIO
+DROP PROCEDURE SumarBeneficioAdquirido
