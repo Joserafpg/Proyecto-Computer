@@ -184,6 +184,7 @@ namespace Proyecto_Computer
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
             text("Inventario", "???.");
+            AbrirFormEnPanel(new Inventario());
         }
 
         private void btnclientes_Click(object sender, EventArgs e)
@@ -201,6 +202,7 @@ namespace Proyecto_Computer
         private void btnconfiguracion_Click(object sender, EventArgs e)
         {
             text("Configuración", "???.");
+            AbrirFormEnPanel(new Configuracion());
         }
 
         private void btnsalir_Click(object sender, EventArgs e)
