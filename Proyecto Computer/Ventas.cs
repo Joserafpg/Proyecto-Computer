@@ -123,12 +123,17 @@ namespace Proyecto_Computer
             txtcodigo.Clear();
             txttotal.ResetText();
             dtgv.Rows.Clear();
+            textBox1.ResetText();
         }
 
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
             Limpiar();
             Limpiar();
+
+            panel1.Visible = false;
+            panel2.Visible = false;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -239,7 +244,7 @@ namespace Proyecto_Computer
 
                 Datosgetfactura pFactura = new Datosgetfactura();
                 pFactura.Empleado = txtempleado.Text;
-                pFactura.Cliente = "Fulanito";
+                pFactura.Cliente = textBox1.Text;
                 pFactura.Total = Convert.ToDecimal(txttotal.Text);
 
                 DatosbaseFactura.Agregar(pFactura);
@@ -320,6 +325,7 @@ namespace Proyecto_Computer
 
                     MessageBox.Show("Facturado con exito");
                     dtgv.Rows.Clear();
+                    panel2.Visible = false;
                     Limpiar();
                 }
 
@@ -347,7 +353,7 @@ namespace Proyecto_Computer
                 form.crystalReportViewer1.ReportSource = oRep;
                 form.Show();
                 oRep.ExportToDisk(ExportFormatType.PortableDocFormat, @"C:\Users\Jose\source\repos\Proyecto-Computer\Facturas\Factura.pdf");
-
+               
             }
 
             else
@@ -366,6 +372,57 @@ namespace Proyecto_Computer
         private void Ventas_Load(object sender, EventArgs e)
         {
             DT_Productos();
+        }
+
+        private void bunifuButton23_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+            bunifuButton22.Visible = false;
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                string nombre = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+
+
+                // La celda tiene un valor válido
+                textBox1.Clear();
+                textBox1.Text = nombre;
+
+            }
+
+            panel2.Visible = false;
+            bunifuButton22.Visible = true;
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            String query = "SELECT * FROM Clientes where ";
+
+            if (btnbuscar1.Text != "")
+            {
+                query = query + "  ( nombre like '%" + txtbuscar.Text + "%')";
+            }
+
+            Conexion.opencon();
+            SqlCommand cmd = new SqlCommand(query, Conexion.ObtenerConexion());
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
+            Conexion.cerrarcon();
+        }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
