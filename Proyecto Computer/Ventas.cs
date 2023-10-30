@@ -11,6 +11,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace Proyecto_Computer
 {
@@ -328,6 +330,21 @@ namespace Proyecto_Computer
             {
                 conn.Close();
             }
+
+            PlantillaFactura form = new PlantillaFactura();
+            ReportDocument oRep = new ReportDocument();
+            ParameterField pf = new ParameterField();
+            ParameterFields pfs = new ParameterFields();
+            ParameterDiscreteValue pdv = new ParameterDiscreteValue();
+            pf.Name = "@numFact";
+            pdv.Value = txtidfactura.Text;
+            pf.CurrentValues.Add(pdv);
+            pfs.Add(pf);
+            form.crystalReportViewer1.ParameterFieldInfo = pfs;
+            oRep.Load(@"C:\Users\Jose\source\repos\Proyecto-Computer\Proyecto Computer\Reportes\Factura.rpt");
+            form.crystalReportViewer1.ReportSource = oRep;
+            form.Show();
+            oRep.ExportToDisk(ExportFormatType.PortableDocFormat, @"C:\Users\Jose\source\repos\Proyecto-Computer\Facturas\Factura.pdf");
         }
 
         private void button1_Click(object sender, EventArgs e)
