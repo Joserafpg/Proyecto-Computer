@@ -37,7 +37,7 @@ namespace Proyecto_Computer
 
         void Buscar()
         {
-            dataGridView1.DataSource = DatosbaseInventario.BuscarAlumnos(txtbuscar.Text, txtbuscar.Text);
+            dataGridView1.DataSource = DatosbaseInventario.BuscarAlumnos(txtbuscar.Text, cDepartamento.Text);
         }
 
     private void Inventario_Load(object sender, EventArgs e)
@@ -47,6 +47,16 @@ namespace Proyecto_Computer
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            Buscar();
+        }
+
+        private void txtbuscar_TextChanged(object sender, EventArgs e)
+        {
+            Buscar();
+        }
+
+        private void cDepartamento_SelectedIndexChanged(object sender, EventArgs e)
         {
             Buscar();
         }

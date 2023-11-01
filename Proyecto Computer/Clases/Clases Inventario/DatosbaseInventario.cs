@@ -50,13 +50,13 @@ namespace Proyecto_Computer.Clases.Clases_Inventario
             return retorno;
         }
 
-        public static List<DatosgetInventario> BuscarAlumnos(string pCodigo, string pNombre)
+        public static List<DatosgetInventario> BuscarAlumnos(string pCodigo, string pDepartamento)
         {
             List<DatosgetInventario> lista = new List<DatosgetInventario>();
             Conexion.opencon();
             {
 
-                SqlCommand comando = new SqlCommand(String.Format("SELECT Id_Producto AS \"Codigo\", Nombre AS \"Nombre\", Precio_Compra AS \"Precio Compra\",Precio AS \"Precio\", Cantidad AS \"Cantidad\", Departamento AS \"Departamento\",  Fecha_Ingreso AS \"Fecha Ingreso\" FROM Productos where Id_Producto like '%{0}%' and Nombre like '%{1}%' ", pCodigo, pNombre),
+                SqlCommand comando = new SqlCommand(String.Format("SELECT Id_Producto, Nombre, Precio_Compra, Precio, Cantidad, Departamento,  Fecha_Ingreso FROM Productos where Id_Producto like '%{0}%' and Departamento like '%{1}%' ", pCodigo, pDepartamento),
                     Conexion.ObtenerConexion());
 
                 SqlDataReader reader = comando.ExecuteReader();
