@@ -25,7 +25,7 @@ namespace Proyecto_Computer
                 Int64 resultado = datosbaseclientes.Eliminar((int)ClienteActual.codigo);
                 if (resultado > 0)
                 {
-                    MessageBox.Show("Estudiantes eliminados", "Estudiante Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Cliente eliminado", "Cliente Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Refresh();
                     btneliminar.Enabled = false;
                     btnmodificar.Enabled = false;
@@ -67,7 +67,21 @@ namespace Proyecto_Computer
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-            
+            BuscarCliente pBuscar = new BuscarCliente();
+            pBuscar.ShowDialog();
+            if (pBuscar.clienteseleccionado != null)
+            {
+                ClienteActual = pBuscar.clienteseleccionado;
+                txtnombre.Text = pBuscar.clienteseleccionado.nombre;
+                txtdireccion.Text = pBuscar.clienteseleccionado.direccion;
+                txttelefono.Text = pBuscar.clienteseleccionado.telefono;
+                txtcorreo.Text = pBuscar.clienteseleccionado.correo;
+                datetimepicker.Value = pBuscar.clienteseleccionado.fecha_ingreso;
+
+                btnagregar.Enabled = false;
+                btnmodificar.Enabled = true;
+                btneliminar.Enabled = true;
+            }
         }
 
         private void btnmodificar_Click(object sender, EventArgs e)
@@ -94,6 +108,11 @@ namespace Proyecto_Computer
             {
                 MessageBox.Show("No se pudo modificar el Cliente", "Ocurrio un error!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+
+        }
+
+        private void Clientes_Load(object sender, EventArgs e)
+        {
 
         }
     }

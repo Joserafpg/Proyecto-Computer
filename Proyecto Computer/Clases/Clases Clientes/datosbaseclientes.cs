@@ -54,5 +54,56 @@ namespace Proyecto_Computer.Clases.Clases_Clientes
             }
 
         }
+        public static List<datosgetclientes> BuscarClientes( string pTelefono)
+        {
+            List<datosgetclientes> lista = new List<datosgetclientes>();
+            Conexion.opencon();
+            {
+
+                SqlCommand comando = new SqlCommand(String.Format(
+               "SELECT codigo, nombre, direccion, telefono, correo, fecha_ingreso FROM clientes where telefono like '%{0}%' ", pTelefono),
+                    Conexion.ObtenerConexion());
+
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    datosgetclientes pClientes = new datosgetclientes();
+                    pClientes.codigo = Convert.ToInt64(reader.GetValue(0));
+                    pClientes.nombre = reader.GetString(1);
+                    pClientes.direccion = reader.GetString(2);
+                    pClientes.telefono = reader.GetString(3);
+                    pClientes.correo = reader.GetString(4);
+                    pClientes.fecha_ingreso = Convert.ToDateTime(reader.GetValue(5));
+
+                    lista.Add(pClientes);
+                }
+                Conexion.cerrarcon();
+                return lista;
+            }
+        }
+        public static datosgetclientes ObtenerClientes(Int64 pId)
+        {
+            Conexion.opencon();
+            {
+                datosgetclientes pClientes = new datosgetclientes();
+                SqlCommand comando = new SqlCommand(string.Format(
+                   "select codigo, nombre, direccion, telefono, correo, fecha_ingreso  From clientes where codigo = {0}", pId), Conexion.ObtenerConexion());
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    pClientes.codigo = Convert.ToInt64(reader.GetValue(0));
+                    pClientes.nombre = reader.GetString(1);
+                    pClientes.direccion = reader.GetString(2);
+                    pClientes.telefono = reader.GetString(3);
+                    pClientes.correo = reader.GetString(4);
+                    pClientes.fecha_ingreso = reader.GetDateTime(5);
+
+                }
+
+
+                Conexion.cerrarcon();
+                return pClientes;
+            }
+        }
     }
 }
