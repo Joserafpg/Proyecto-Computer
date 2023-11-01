@@ -16,5 +16,10 @@ namespace Proyecto_Computer
         {
             InitializeComponent();
         }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

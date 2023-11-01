@@ -123,7 +123,7 @@ namespace Proyecto_Computer
             txtcodigo.Clear();
             txttotal.ResetText();
             dtgv.Rows.Clear();
-            textBox1.ResetText();
+            textBox1.Text = "Desconocido";
         }
 
         private void bunifuButton22_Click(object sender, EventArgs e)
