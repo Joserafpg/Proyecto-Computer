@@ -152,6 +152,17 @@ SELECT * FROM Acceso
 
 SELECT DISTINCT Departamento FROM productos;
 
+SELECT 
+Id_Producto AS "Codigo",
+Nombre AS "Nombre", 
+Precio_Compra AS "Precio Compra",
+Precio AS "Precio", 
+Cantidad AS "Cantidad", 
+Fecha_Ingreso AS "Fecha Ingreso"
+FROM Productos
+
+SELECT Id_Producto AS "Codigo", Nombre AS "Nombre", Precio_Compra AS "Precio Compra",Precio AS "Precio", Cantidad AS "Cantidad", Departamento AS Departamento,  Fecha_Ingreso AS "Fecha Ingreso" FROM Productos
+
 select Codigo, Producto, Precio,Cantidad,SubTotal from Factura where No_Factura = 1;
 
 SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC

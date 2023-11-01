@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Computer.Clases.Clases_Inventario;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,14 +35,20 @@ namespace Proyecto_Computer
             Conn.Close();
         }
 
-        private void Inventario_Load(object sender, EventArgs e)
+        void Buscar()
+        {
+            dataGridView1.DataSource = DatosbaseInventario.BuscarAlumnos(txtbuscar.Text, txtbuscar.Text);
+        }
+
+    private void Inventario_Load(object sender, EventArgs e)
         {
             CargarComboBox();
+            Buscar();
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-
+            Buscar();
         }
     }
 }
