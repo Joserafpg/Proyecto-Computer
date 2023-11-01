@@ -150,6 +150,8 @@ SELECT * FROM Factura
 SELECT * FROM FacturaTittle
 SELECT * FROM Acceso
 
+SELECT DISTINCT Departamento FROM productos;
+
 select Codigo, Producto, Precio,Cantidad,SubTotal from Factura where No_Factura = 1;
 
 SELECT TOP 1 * FROM Acceso ORDER BY Fecha DESC

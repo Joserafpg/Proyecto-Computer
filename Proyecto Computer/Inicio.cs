@@ -76,7 +76,6 @@ namespace Proyecto_Computer
             ExecuteProcedureAndDisplayResult("SumarBeneficioMensual", beneficiobrutomensual);
 
             FormatValueInLabel();
-            MostrarVentas();
         }
     }
 }
