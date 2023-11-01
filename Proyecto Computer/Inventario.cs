@@ -38,5 +38,10 @@ namespace Proyecto_Computer
         {
             CargarComboBox();
         }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
