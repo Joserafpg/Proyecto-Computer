@@ -23,5 +23,11 @@ namespace Proyecto_Computer
             Usuarios frm = new Usuarios();
             frm.ShowDialog();
         }
+
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            ReportesIMP frm = new ReportesIMP();
+            frm.ShowDialog();
+        }
     }
 }

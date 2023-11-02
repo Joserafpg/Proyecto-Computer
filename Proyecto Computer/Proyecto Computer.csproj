@@ -269,6 +269,12 @@
     <Compile Include="Clases\DatosgetRegistro.cs" />
     <Compile Include="Clases\Permisos.cs" />
     <Compile Include="Clases\Clases Ventas\Productos.cs" />
+    <Compile Include="ReportesIMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesIMP.Designer.cs">
+      <DependentUpon>ReportesIMP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -342,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarCliente.resx">
       <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesIMP.resx">
+      <DependentUpon>ReportesIMP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>

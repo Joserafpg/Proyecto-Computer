@@ -58,6 +58,8 @@
             this.btnbuscar1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -479,18 +481,20 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.btnbuscar);
             this.panel2.Controls.Add(this.txtbuscar);
             this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(126, 106);
+            this.panel2.Location = new System.Drawing.Point(126, 60);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(243, 309);
+            this.panel2.Size = new System.Drawing.Size(669, 355);
             this.panel2.TabIndex = 10;
             this.panel2.Visible = false;
             // 
             // btnbuscar
             // 
-            this.btnbuscar.Location = new System.Drawing.Point(303, 33);
+            this.btnbuscar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnbuscar.Location = new System.Drawing.Point(303, 79);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(75, 23);
             this.btnbuscar.TabIndex = 11;
@@ -500,7 +504,8 @@
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(151, 33);
+            this.txtbuscar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtbuscar.Location = new System.Drawing.Point(151, 79);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(146, 20);
             this.txtbuscar.TabIndex = 11;
@@ -509,8 +514,9 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(146, 62);
+            this.dataGridView1.Location = new System.Drawing.Point(146, 108);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(436, 150);
@@ -547,11 +553,32 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Cliente:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(299, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(159, 19);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Seleccionar Cliente";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(904, 227);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_2);
+            // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.bunifuButton22);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuButton23);
@@ -608,5 +635,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnbuscar;
         private System.Windows.Forms.TextBox txtbuscar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button3;
     }
 }
