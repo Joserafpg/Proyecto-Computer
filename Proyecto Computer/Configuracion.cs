@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Computer.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,8 @@ namespace Proyecto_Computer
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
-
+            Usuarios frm = new Usuarios();
+            frm.ShowDialog();
         }
     }
 }
