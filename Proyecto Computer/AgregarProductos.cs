@@ -60,8 +60,25 @@ namespace Proyecto_Computer
             }
             else
             {
-                // Realiza una operación de inserción en la base de datos para agregar un nuevo producto
-                // Implementa aquí la lógica para agregar un nuevo producto en la base de datos.
+                DatosgetInventario pClientes = new DatosgetInventario();
+                pClientes.Nombre = txtnombre.Text;
+                pClientes.Precio_Compra = Convert.ToDecimal(txtpreciocompra.Text);
+                pClientes.Precio = Convert.ToDecimal(txtprecio.Text);
+                pClientes.Cantidad = Convert.ToInt64(txtcantidad.Text);
+                pClientes.Departamento = cdepartamento.Text;
+                pClientes.Fecha_Ingreso = dtp.Value;
+
+                int Resultado = DatosbaseInventario.Agregar(pClientes);
+
+                if (Resultado > 0)
+                {
+                    MessageBox.Show("Alumno Agregado con exito", "Alumno agregado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo agregar el alumno", "Ocurrio un error!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
 
             // Indica que la operación fue exitosa

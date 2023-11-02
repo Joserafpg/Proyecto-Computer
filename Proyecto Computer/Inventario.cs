@@ -102,7 +102,12 @@ namespace Proyecto_Computer
 
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
-            
+            AgregarProductos formAgregar = new AgregarProductos();
+            formAgregar.EditMode = false;
+            if (formAgregar.ShowDialog() == DialogResult.OK)
+            {
+                Buscar();
+            }
         }
 
         private void btnmodificar_Click(object sender, EventArgs e)
