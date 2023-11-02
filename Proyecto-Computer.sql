@@ -28,7 +28,7 @@ Fecha datetime,
 
 create table Productos (
 Id_Producto INT IDENTITY (1,1) PRIMARY KEY NOT NULL,
-Nombre varchar (30),
+Nombre varchar (50),
 Precio_Compra decimal (38),
 Precio decimal (38),
 Cantidad int,
@@ -45,23 +45,7 @@ direccion varchar (50),
 fecha_ingreso date
 )
 
-/*Tabla facturaTitulo*/
-create table FacturaTittle(
-No_Factura INT IDENTITY (1,1) PRIMARY KEY NOT NULL,
-Empleado varchar (50),
-Cliente varchar (50),
-Fecha datetime,
-Total decimal (38),
-)
-
-create table Factura (
-No_Factura INT NOT NULL,
-Codigo INT, 
-Producto varchar (50), 
-Precio decimal (38), 
-Cantidad int,
-SubTotal decimal (38),
-)
+ 
 
 
 /*Procedures*/
@@ -200,7 +184,7 @@ delete Acceso
 
 
 
-drop table Acceso
+drop table Productos
 drop table Usuarios
 drop table Factura
 drop table FacturaTittle

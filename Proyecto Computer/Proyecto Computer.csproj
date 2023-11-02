@@ -244,6 +244,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarProductos.Designer.cs">
+      <DependentUpon>AgregarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -323,6 +329,9 @@
     <Compile Include="Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AgregarProductos.resx">
+      <DependentUpon>AgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarCliente.resx">
       <DependentUpon>BuscarCliente.cs</DependentUpon>
     </EmbeddedResource>

@@ -89,10 +89,47 @@ namespace Proyecto_Computer
                 {
                     MessageBox.Show("Producto eliminados", "Producto Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+
+                else
+                {
+                    MessageBox.Show("Debes seleccionar un productos para ser eliminado", "Eliminacion cancelada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
 
             else
                 MessageBox.Show("Se cancelo la eliminacion", "Cancelado");
+        }
+
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnmodificar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dataGridView1.SelectedRows[0];
+
+                // Obtén los datos de la fila seleccionada
+                Int64 id = Convert.ToInt64(row.Cells[0].Value);
+                string nombre = row.Cells[1].Value.ToString();
+                decimal precioCompra = Convert.ToDecimal(row.Cells[2].Value);
+                decimal precio = Convert.ToDecimal(row.Cells[3].Value);
+                Int64 cantidad = Convert.ToInt64(row.Cells[4].Value);
+                string departamento = row.Cells[5].Value.ToString();
+                DateTime fecha = Convert.ToDateTime(row.Cells[6].Value);
+
+                // Abre el formulario para editar el producto
+                AgregarProductos formEditar = new AgregarProductos();
+                formEditar.EditMode = true; // Estás en modo editar
+                formEditar.InitializeData(id, nombre, precioCompra, precio, cantidad, departamento, fecha);
+                if (formEditar.ShowDialog() == DialogResult.OK)
+                {
+                    // Actualiza el DataGridView después de la edición
+                    Buscar();
+                }
+            }
         }
     }
 }
