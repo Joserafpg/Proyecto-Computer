@@ -179,10 +179,40 @@
   <data name="btnguardar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVHhe7dKxAUBAAMBAk/zK7GcM/WMAFdJdcVXaLGOb
-        +9jOE/4z93uspwDfGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuE
-        sUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFILGOdx1OA19Z5XLF9Eabs0yP2
-        AAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVHhe7dw9bNNQFAVgj4yMDHbMyNiRsSMjIws7CxJI
+        DHRjYfZzhDogIdSJgYkBiYm1Q4eIKRtbJwNJS/kRla859/lFELhN/ZclOVf6VFVO7Eg5uu/52U7UpdJx
+        dSNx1eORk32Y1KqKNkH4PnM5SLLqSZrLzfC1r6fSZ9U1fzAnBZzAuf3BaJMkucz0+06dvE6zaifEoX9h
+        Z1eTsYyTTE6sA9P2wCg19wFDkwnx6FbaBpHWWZyVP6wD0XbyTSaXuyEm7QqBeoixtrB2TIR8fEE+9kNc
+        mhXe8CJx5czaIdECwnWKrLwJsVldaHN7nE9RU2hA37URhfjYhYn67siVHP6oFT8sXjTn8ssJTj5ZbyS6
+        nHzW9c0Qpz+F1D1PspJrU9RdJu9DnOrCEHgdweJknXrRxdSllXpd9LJeSNSeTEKs/DDIs0AaiJzp1Zp6
+        dR0tzH4RUTvapGInd3QxNEscJ+00HJ1aRaNc3lobibpC15pqx+K9VDQoBKvQiTtX2mlw6Fj2BqI+GCxa
+        CwaL1oKLo7QWGqyptYGoK21WkV6RtjYSdZVk8lEXSA+sjUTdyWEUZ9Vt/DP/fyNRe+hWP+FBlL6srmBM
+        5ONdNAiE6qve3+dvm9HWZb2IqC0/v1pUnMst3jpDfWHkO8Wc/X6IVV08O6S+lrrVojAu7uiz+dYbiBqY
+        64lgiNNyoWs9TVzJcFEr/qHVXF6FGNmFify7OCt/WTsgMuVypKsLIUJ26QvQuT4wXNSMTP3DE03Khwud
+        C5MxXqAmUxj+jhqH6u9CsPYQMC5D0L/mOqe6dPhbVUjkbrgDgpP6LYccnEFx4dlfl6qvKcqxLtnj7zfr
+        wLR5EKRz0N+cLdClHoU4DF96HQgHuYdwHeqCmPVhaBPIMUz017HNX5FZWVH0G8UyXQHEHnOrAAAAAElF
+        TkSuQmCC
 </value>
+  </data>
+  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(171, 171, 171); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(171, 171, 171); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel3.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(171, 171, 171); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(171, 171, 171); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(171, 171, 171); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel6.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(171, 171, 171); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel7.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
 </root>

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,23 @@ namespace Proyecto_Computer
         public AgregarProductos()
         {
             InitializeComponent();
+        }
+
+        public static SqlConnection Conn = new SqlConnection("Server = DESKTOP-NDDA7LS; database=Computer; Integrated Security=True");
+
+        void CargarComboBox()
+        {
+            Conn.Open();
+            string consulta = "SELECT DISTINCT Departamento FROM productos";
+            SqlCommand comando = new SqlCommand(consulta, Conn);
+            SqlDataReader lector = comando.ExecuteReader();
+
+            while (lector.Read())
+            {
+                cdepartamento.Items.Add(lector.GetString(0));
+            }
+
+            Conn.Close();
         }
 
         public void InitializeData(Int64 id, string nombre, decimal precioCompra, decimal precio, Int64 cantidad, string departamento, DateTime fecha)
@@ -84,6 +102,11 @@ namespace Proyecto_Computer
             // Indica que la operación fue exitosa
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void AgregarProductos_Load(object sender, EventArgs e)
+        {
+            CargarComboBox();
         }
     }
 }

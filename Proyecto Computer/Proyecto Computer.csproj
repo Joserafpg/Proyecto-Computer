@@ -392,6 +392,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Clases\Clases Login\" />
+    <Folder Include="Clases\Clases Usuarios\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
